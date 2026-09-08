@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSCMBA 2026</title>
+    <link rel="icon" href="./images/manit-logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contentpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /*near-by places*/
+.right{
+    padding-left: 30px;
+    padding-right: 0px; 
+}
+        @media screen and (max-width: 1200px) {
+  .venue-section {
+    flex-direction: column;
+  }
+  .venue-text,
+    .venue-image {
+        flex: unset;
+    }
+  .venue-section .venue-text.right {
+    order: -1;
+    
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">ICSCMBA</div>
+        <div class="nav-toggle" id="navToggle">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="important-date.html">Important Dates</a></li>
+            <li class="dropdown">
+                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
+                        class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
+                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
+                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
+                        class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="call-for-paper.html">Call for Papers</a></li>
+                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
+                        class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="conference-venue.html">Conference Venue</a></li>
+                    <li><a href="how-to-reach.html">How to Reach?</a></li>
+                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
+                        class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="about-conference.html">About Conference</a></li>
+                    <li><a href="about-manit.html">About MANIT</a></li>
+                    <li><a href="about-department.html">About Department</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="register-btn">Submission</a></li>
+        </ul>
+    </nav>
+    <!-- Banner Section -->
+    <section class="inner-banner">
+        <div class="banner-overlay">
+            <h1>Tourist Places Near By</h1>
+        </div>
+    </section>
+    <div class="section-container">
+        <section class="venue-section">
+            <div class="venue-text">
+                <h2>Ujjain</h2>
+                <p>
+                    Ujjain is an ancient city in Madhya Pradesh, known for its religious significance, especially as one
+                    of the four sites of the Kumbh Mela. It's famous for the Mahakaleshwar Jyotirlinga temple, dedicated
+                    to Lord Shiva.
+                </p>
+                <p>
+                    Distance from Bhopal: Approximately 190 km by road, which takes around 4 to 5 hours by car or bus.
+                    There's also a direct train route between Bhopal and Ujjain.
+                </p>
+            </div>
+            <div class="venue-image">
+                <img src="./images/ujjain.jpg" alt="Venue Image">
+            </div>
+        </section>
+    </div>
+    <div class="section-container">
+        <section class="venue-section">
+            <div class="venue-image">
+                <img src="./images/bhimbetka.jpg" alt="Venue Image">
+            </div>
+            <div class="venue-text right">
+                <h2>Bhimbetka</h2>
+                <p>
+                    Bhimbetka is an archaeological site in Madhya Pradesh, India, renowned for its prehistoric rock
+                    shelters and cave paintings. These shelters exhibit evidence of human life dating back over 100,000
+                    years, with some of the earliest cave paintings from around 10,000 BCE, depicting scenes of hunting,
+                    dancing, and daily life. Recognized as a UNESCO World Heritage Site in 2003, Bhimbetka offers
+                    insights into the early cultural evolution of humans in the Indian subcontinent.
+                </p>
+                <p>
+                    Distance from Bhopal: Approximately 45 km southeast of Bhopal, accessible via road.
+                </p>
+            </div>
+
+        </section>
+    </div>
+    <div class="section-container">
+        <section class="venue-section">
+            <div class="venue-text">
+                <h2>Sanchi</h2>
+                <p>
+                    Sanchi is a historic village in Madhya Pradesh, India, renowned for its ancient Buddhist monuments,
+                    including the Great Stupa, which dates back to the 3rd century BCE. Commissioned by Emperor Ashoka,
+                    this stupa is one of the oldest stone structures in India and a significant symbol of Buddhist art
+                    and architecture. Recognized for its cultural
+                    importance, Sanchi was designated a UNESCO World Heritage Site in 1989.
+                </p>
+                <p>
+                    Distance from Bhopal: Sanchi is located approximately 46 kilometers northeast of Bhopal. The journey
+                    by road typically takes about 1 to 1.5 hours, making it a convenient day trip from the state
+                    capital.
+                </p>
+            </div>
+            <div class="venue-image">
+                <img src="./images/sanchi.jpg" alt="Venue Image">
+            </div>
+        </section>
+    </div>
+    <div class="section-container">
+        <section class="venue-section">
+            <div class="venue-image">
+                <img src="./images/bhojpur-temple.jpg" alt="Venue Image">
+            </div>
+            <div class="venue-text right">
+                <h2>Bhojeshwar Temple</h2>
+                <p>
+                    The Bhojeshwar Temple, also known as the Bhojpur Shiva Temple, is an 11th-century Hindu temple
+                    dedicated to Lord Shiva, located in Bhojpur village, Madhya Pradesh. Commissioned by King Bhoja of
+                    the Paramara dynasty, the temple is renowned for its massive, unfinished architecture and houses one
+                    of India's largest Shiva lingams, standing approximately 7.5 feet tall. Despite its incomplete
+                    status, the temple remains an active place of worship and is protected by the Archaeological Survey
+                    of India. 
+                </p>
+                <p>
+                    Distance from Bhopal: The Bhojeshwar Temple is situated about 28 to 32 km southeast of Bhopal,
+                    making it easily accessible by road. The drive typically takes around 30 to 45 minutes, depending on
+                    traffic and the chosen route.
+                </p>
+            </div>
+        </section>
+    </div>
+    <div class="section-container">
+        <section class="venue-section">
+            <div class="venue-text">
+                <h2>Udayagiri Caves</h2>
+                <p>
+                    The Udayagiri Caves are a group of 20 rock-cut caves near Vidisha, Madhya Pradesh, dating back to
+                    the Gupta period (4th-5th century CE). They are among the oldest surviving Hindu temples in India
+                    and are notable for their intricate carvings and religious significance. Most caves are dedicated to
+                    Hindu deities, primarily Vishnu and Shiva, with one Jain cave also present. A highlight is the large
+                    relief of Vishnu in his Varaha (boar) avatar rescuing the Earth goddess, symbolizing the triumph of
+                    good over evil. 
+                    </p>
+                    <p>
+                    Distance from Bhopal: Approximately 55.9 km by road, taking about 1 to 1.5 hours to reach. The caves
+                    are also accessible by train, with a journey time of around 42 minutes. 
+
+                </p>
+            </div>
+            <div class="venue-image">
+                <img src="./images/Udayagiri-Caves.jpg" alt="Venue Image">
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <h4>ICSCMBA 2026</h4>
+
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="important-date.html">Important Dates</a></li>
+            <li><a href="call-for-paper.html">Call for Papers</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
+        </ul>
+
+        <!-- <div class="social-icons">
+            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
+        </div> -->
+
+
+        <div class="footer">
+            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/style.js"></script>
+</body>
+
+</html>

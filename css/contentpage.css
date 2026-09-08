@@ -1,0 +1,310 @@
+:root {
+    --primary-color: #002244;
+    --secondary-color: #f90;
+    --text-color: #000;
+    --bg-color: #f9f9f9;
+    --sec-bg-color:#f2f2f2;
+  }
+.inner-banner {
+    background-image: url("../images/manit-maingate.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 58px;
+    margin-bottom: 90px;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+}
+@media (max-width: 1200px){
+    .inner-banner{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .inner-banner {
+        height: 30vh;
+    }
+
+    .inner-banner h1 {
+        font-size: 2rem;
+    }
+}
+body{
+    background-color: var(--sec-bg-color);
+}
+.section-container{
+    margin: 30px;
+    background-color: white;
+    
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+.call-for-paper-title{
+   
+    padding: 60px;
+    text-align: center;
+}
+.even{
+    background-color: var(--sec-bg-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(204, 203, 203);
+}
+.call-for-paper-container {
+    /* max-width: 1000px; */
+    margin: auto;
+    /* border: #002244 solid 20px; */
+}
+
+.call-for-paper-title h2 {
+    font-size: 2rem;
+    color:var(--primary-color);
+    margin-bottom: 25px;
+}
+.call-for-paper-title h4 {
+    font-size: 1.25rem;
+    color:rgb(185, 15, 15);
+    margin-bottom: 25px;
+}
+
+.call-for-paper-title p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.call-for-paper-title ul>li{
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.call-for-paper-title ol>li{
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .call-for-paper-title h2 {
+        font-size: 26px;
+    }
+
+    .call-for-paper-title p {
+        font-size: 15px;
+    }
+    .call-for-paper-title{
+        padding: 20px;
+    }
+}
+
+/*department image in conference venue*/
+@media(max-width:1550px)
+{
+    #dept-img {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+}
+
+/*responsive map*/
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30%; /* 16:9 aspect ratio */
+    height: 0;
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  @media(max-width:768px)
+  {
+    .map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+  }
+  }
+  
+  /*map heading*/
+  #map-heading{
+    font-size: 2rem;
+    color:var(--primary-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*list in submission page*/
+.info-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 15px;
+  }
+
+  .info-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .info-list li {
+    
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+  }
+
+  /*tables in submission page*/
+.fees-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .fees-table th, .fees-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+  }
+
+  .fees-table th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    .fees-table th, .fees-table td {
+      padding: 10px 8px;
+      font-size: 14px;
+    }
+}
+#addressId{
+    font-size: 1.5rem;
+}
+/*how to reach map*/
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Author guidelines button*/
+#download-btn {
+    background-color: var(--secondary-color);
+    color: var(--sec-bg-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    #download-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    #download-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    #download-btn {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+}
+/*author guideline reasearch topics*/
+.topics-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* or any spacing you prefer between the two columns */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.topics-columns ul {
+    flex: 1 1 45%;
+    padding-left: 20px;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.topics-columns li {
+    margin-bottom: 0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+@media (max-width: 480px) {
+    #authors-topics-column{
+        font-size: 10px;
+    }
+    .topics-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    
+    #authors-topics-columns li {
+        
+        font-size:1rem;
+
+    }
+}
+

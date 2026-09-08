@@ -1,0 +1,31 @@
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.toggle-btn {
+    background-color: #002244;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #003080;
+}
+
+.toggle-btn.active {
+    background-color: #f90;
+}
+
+@media (max-width: 600px) {
+    .toggle-btn {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
