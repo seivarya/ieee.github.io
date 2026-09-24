@@ -1,134 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Important Dates | ICSCMBA 2026</title>
+  <meta name="description" content="Important dates and submission deadlines for ICSCMBA 2026 conference at MANIT Bhopal.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- Core Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- Modular Scripts -->
+  <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
+  <!-- Navigation Header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
         </ul>
-    </nav>
-  <!-- Banner Section -->
-  <section class="inner-banner">
-    <div class="banner-overlay">
-      <h1>Important Dates</h1>
+      </nav>
     </div>
-  </section>
+  </header>
 
-     <!--important dataes-->
-     <section class="important-dates">
-      <h2>Important Dates</h2>
-      <div class="dates-table-container">
-          <table class="dates-table">
-              <thead>
-                  <tr>
-                      <th>Event</th>
-                      <th>Date</th>
-                  </tr>
-              </thead>
-              <tbody>
-              <!-- <tr>
-                  <td>Full Paper Submission Starts</td>
-                  <td>May 1, 2025</td>
-              </tr> -->
-              <tr>
-                  <td>Last Date of Submission</td>
-                  <td>31st August, 2026</td>
-              </tr>
-              <tr>
-                  <td>Paper Acceptance Notification</td>
-                  <td>15th September, 2026</td>
-              </tr>
-               <tr>
-                  <td>Camera Ready Paper</td>
-                  <td>30th September, 2026</td>
-              </tr>
-             <tr>
-                  <td>Conference Dates</td>
-                  <td>11-12 Dec, 2026</td>
-              </tr>
-          </tbody>
-          </table>
+  <main>
+    <!-- Inner Banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">Important Dates</h1>
       </div>
-  </section>
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
+    </section>
 
-        <ul class="footer-links">
+    <!-- Main Content -->
+    <div class="container section">
+      <article class="content-card" style="max-width: 850px; margin: 0 auto;">
+        <header class="section-header section-header--center">
+          <h2>Conference Schedule &amp; Deadlines</h2>
+          <p>Please note the key deadlines for manuscript submission, review notifications, and registration</p>
+        </header>
+
+        <div class="table-responsive">
+          <table class="data-table data-table--striped">
+            <thead>
+              <tr>
+                <th scope="col">Event / Milestone</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Last Date of Submission</strong></td>
+                <td><span class="badge badge--accent">31st August, 2026</span></td>
+              </tr>
+              <tr>
+                <td><strong>Paper Acceptance Notification</strong></td>
+                <td>15th September, 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Camera Ready Paper Submission</strong></td>
+                <td>30th September, 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Conference Dates</strong></td>
+                <td><strong style="color: var(--color-primary);">11–12 December, 2026</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-8); display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+          <a href="call-for-paper.html" class="btn btn--primary">View Call for Papers &rarr;</a>
+          <a href="registration.html" class="btn btn--accent">Registration Fees &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Consistent Global Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/style.js"></script>
+
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

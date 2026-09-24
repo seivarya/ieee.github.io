@@ -1,239 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About MANIT Bhopal | ICSCMBA 2026</title>
+  <meta name="description" content="Overview of Maulana Azad National Institute of Technology (MANIT) Bhopal, an Institute of National Importance hosting ICSCMBA 2026.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- info: core modular stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- info: modular scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/gallery.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
-        </ul>
-    </nav>
+  <!-- info: navigation header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
 
-    <!-- Banner Section -->
-    <section class="inner-banner">
-        <div class="banner-overlay">
-            <h1>About Manit</h1>
-        </div>
-    </section>
- 
-    <!--about department-->
-    <div class="section-container">
-        <section class="venue-section">
-            <div class="venue-text">
-                <h2>MANIT Bhopal</h2>
-                <p>
-                    Maulana Azad National Institute of Technology (MANIT) Bhopal is a prestigious Institution of National Importance located in the heart of India.  Formerly known as Maulana Azad College of Technology (MACT), MANIT has a rich history of providing quality technical education and contributing to the development of the nation.
-                </p>
-            </div>
-            <div class="venue-image">
-                <img src="./images/manit.png" alt="Venue Image">
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>History and Legacy</h2>
-                <div class="call-for-paper-list">
-                    <p>Established in 1960, MANIT was jointly sponsored by the Government of India and the Government of Madhya Pradesh.  The institute was named after the esteemed scholar and the first Education Minister of independent India, Maulana Abul Kalam Azad.  Since its inception, MANIT has been dedicated to producing highly skilled, talented, and qualified manpower in various fields of engineering and technology.</p>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Academic Programs</h2>
-                <div class="call-for-paper-list">
-                    <p>MANIT offers a wide range of academic programs to nurture the next generation of innovators and leaders.  The institute provides undergraduate, postgraduate, and doctoral programs across diverse disciplines.  These programs are designed to impart in-depth knowledge, foster critical thinking, and promote research and development.</p>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Commitment to Excellence</h2>
-                <div class="call-for-paper-list">
-                    <p>MANIT is committed to excellence in teaching, research, and innovation. The institute strives to provide a conducive learning environment that encourages intellectual curiosity, creativity, and a passion for lifelong learning. With its focus on quality education and holistic development, MANIT continues to be a leading institution in the field of technical education.</p>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Explore More</h2>
-                <div class="call-for-paper-list">
-                    <p>For more comprehensive information about MANIT Bhopal, please visit the official website: <a href="https://www.manit.ac.in/">https://www.manit.ac.in/</a></p>
-                </div>
-            </div>
-        </section>
-             <!--gallery-->
-    <section class="gallery-section">
-        <h2>Campus Highlights</h2>
-        <div class="gallery-slider">
-          <div class="gallery-slide active">
-            <img src="images/manitbg.png" alt="Ujjain">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-maingate.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-hostel.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-nature.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-library.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-porche.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-republicday.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/sac.jpg" alt="">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/hotspot.jpg" alt="">
-          </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
           
-          <button class="gallery-prev">&#10094;</button>
-          <button class="gallery-next">&#10095;</button>
-        </div>
-      </section>
-    </div> 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
 
-        <ul class="footer-links">
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- info: inner page banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">About MANIT</h1>
+      </div>
+    </section>
+
+    <!-- info: main content section -->
+    <div class="container section">
+      <!-- info: manit overview split -->
+      <article class="content-card">
+        <div class="content-split">
+          <div class="content-split__text">
+            <h2>MANIT Bhopal</h2>
+            <p>
+              Maulana Azad National Institute of Technology (MANIT) Bhopal is a prestigious Institution of National Importance located in the heart of India. Formerly known as Maulana Azad College of Technology (MACT), MANIT has a rich history of providing quality technical education and significantly contributing to the scientific and technological development of the nation.
+            </p>
+            <p>
+              Sprawling over an expansive 650-acre green campus, MANIT provides state-of-the-art infrastructure, world-class research laboratories, and modern computational facilities that foster innovation and academic excellence.
+            </p>
+          </div>
+          <div class="content-split__media">
+            <img src="assets/images/campus/manit.png" alt="MANIT Bhopal Main Administrative Campus">
+          </div>
+        </div>
+      </article>
+
+      <!-- History and Legacy -->
+      <article class="content-card">
+        <h2>History and Legacy</h2>
+        <p>
+          Established in 1960, MANIT was jointly sponsored by the Government of India and the Government of Madhya Pradesh as one of the pioneering Regional Engineering Colleges (RECs). The institute was named in honor of the esteemed scholar, visionary leader, and the first Education Minister of independent India, Maulana Abul Kalam Azad.
+        </p>
+        <p>
+          In 2002, the institute was upgraded to National Institute of Technology (NIT) status and declared an Institute of National Importance under the NIT Act by the Parliament of India. Since its inception, MANIT has been dedicated to producing highly skilled, talented, and ethical manpower across various engineering, sciences, architecture, and management domains.
+        </p>
+      </article>
+
+      <!-- Academic Programs -->
+      <article class="content-card">
+        <h2>Academic Programs</h2>
+        <p>
+          MANIT offers a wide range of academic programs to nurture the next generation of innovators, researchers, and industry leaders:
+        </p>
+        <ul class="list-check">
+          <li><strong>Undergraduate Programs:</strong> B.Tech in major engineering disciplines and Bachelor of Architecture &amp; Planning.</li>
+          <li><strong>Postgraduate Programs:</strong> M.Tech, MCA, MBA, and M.Sc. degrees designed for specialized industry and research expertise.</li>
+          <li><strong>Doctoral Programs:</strong> Ph.D. research across interdisciplinary frontiers in sciences, engineering, computing, and humanities.</li>
+        </ul>
+      </article>
+
+      <!-- Commitment to Excellence -->
+      <article class="content-card">
+        <h2>Commitment to Excellence</h2>
+        <p>
+          MANIT is steadfastly committed to excellence in teaching, sponsored research, and technological innovation. The institute strives to provide a conducive learning ecosystem that encourages intellectual curiosity, creativity, and lifelong learning. With a strong alumni network spread globally across leading academia, research institutes, and multinational corporations, MANIT continues to be at the forefront of national education.
+        </p>
+        <div style="margin-top: var(--space-5);">
+          <p>For more comprehensive information about MANIT Bhopal, please visit the official institutional portal: <a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: var(--color-primary); text-decoration: underline;">https://www.manit.ac.in/</a></p>
+        </div>
+      </article>
+
+      <!-- Campus Highlights Gallery Slider -->
+      <article class="content-card">
+        <header class="section-header section-header--center">
+          <h2>Campus Highlights</h2>
+          <p>Glimpses of MANIT Bhopal's lush green campus, landmarks, and facilities</p>
+        </header>
+
+        <div class="gallery-wrapper" aria-label="Campus Highlights Photo Slider">
+          <div class="gallery-slider">
+            <div class="gallery-slide is-active">
+              <img src="assets/images/campus/manitbg.png" alt="MANIT Campus Panoramic View">
+              <div class="gallery-caption">MANIT Campus Panoramic View</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/manit-maingate.jpg" alt="MANIT Main Gate Entrance">
+              <div class="gallery-caption">Main Gate Entrance</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/manit-hostel.jpg" alt="Student Hostels and Residential Complex">
+              <div class="gallery-caption">Student Hostels &amp; Campus Life</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/manit-nature.jpg" alt="Greenery and Nature on Campus">
+              <div class="gallery-caption">Lush Green Campus Environment</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/manit-library.jpg" alt="Central Library">
+              <div class="gallery-caption">Central Library &amp; Learning Center</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/manit-porche.jpg" alt="Administrative Porch and Buildings">
+              <div class="gallery-caption">Administrative Porch</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/manit-republicday.jpg" alt="National Day Celebrations at MANIT">
+              <div class="gallery-caption">Institutional Celebrations</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/sac.jpg" alt="Student Activity Centre (SAC)">
+              <div class="gallery-caption">Student Activity Centre (SAC)</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/campus/hotspot.jpg" alt="Campus Hotspot and Student Gathering Spaces">
+              <div class="gallery-caption">Campus Grounds &amp; Student Spaces</div>
+            </div>
+          </div>
+
+          <button class="gallery-btn gallery-btn--prev" aria-label="Previous image">&#10094;</button>
+          <button class="gallery-btn gallery-btn--next" aria-label="Next image">&#10095;</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- info: consistent global footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-    
-    <script>
 
-   // Navbar Toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
 
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
 
-// Handle dropdown toggle on mobile
-const dropdownTriggers = document.querySelectorAll('.dropdown > a');
-
-dropdownTriggers.forEach(trigger => {
-    trigger.addEventListener('click', function (e) {
-        if (window.innerWidth <= 1200) {
-            e.preventDefault(); // Prevent default anchor behavior
-            const parentLi = this.parentElement;
-            parentLi.classList.toggle('open');
-        }
-    });
-});     
-//gallery slider
-let galleryIndex = 0;
-const gallerySlides = document.querySelectorAll('.gallery-slide');
-const galleryPrev = document.querySelector('.gallery-prev');
-const galleryNext = document.querySelector('.gallery-next');
-
-function showGallerySlide(index) {
-  gallerySlides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-}
-
-function nextGallerySlide() {
-  galleryIndex = (galleryIndex + 1) % gallerySlides.length;
-  showGallerySlide(galleryIndex);
-}
-
-function prevGallerySlide() {
-  galleryIndex = (galleryIndex - 1 + gallerySlides.length) % gallerySlides.length;
-  showGallerySlide(galleryIndex);
-}
-
-// Auto-slide every 5 seconds
-setInterval(nextGallerySlide, 5000);
-
-// Manual navigation
-galleryNext.addEventListener('click', nextGallerySlide);
-galleryPrev.addEventListener('click', prevGallerySlide);
-
-// Show first slide
-showGallerySlide(galleryIndex);
-
-    
-    </script>
 </body>
-
-
 </html>

@@ -1,251 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration &amp; Payment | ICSCMBA 2026</title>
+  <meta name="description" content="Registration fees, categories, payment guidelines, and bank account details for ICSCMBA 2026 conference.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- Core Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- Modular Scripts -->
+  <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inner Banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">Registration &amp; Payment</h1>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container section">
+
+      <!-- Process Guidelines -->
+      <article class="content-card">
+        <h2>Registration &amp; Payment Process</h2>
+        <ul class="list-check">
+          <li><strong>Page Allowance:</strong> Every accepted paper can have up to 6 pages in the final PDF. If needed, additional pages (maximum 2 more additional pages apart from basic 6 pages) can be added to make the final version of the paper. This requires paying an extra charge of <strong>INR 2,000 per additional page</strong> at the time of author registration payment.</li>
+          <li><strong>Confirmation:</strong> The participant must complete the registration and payment process via the official registration form after receiving paper acceptance notification.</li>
+          <li><strong>Inclusions:</strong> The registration fee includes a conference delegate kit, access to all technical keynote sessions and tracks, networking lunches, and high tea/coffee refreshments.</li>
+          <li><strong>Receipts:</strong> Please record transaction UTR numbers and preserve screenshots of payment confirmation, which must be uploaded with the registration form.</li>
+        </ul>
+      </article>
+
+      <!-- Fee Tables -->
+      <article class="content-card">
+        <h2>Conference Registration Fee Structure</h2>
+
+        <!-- Category A -->
+        <h3 style="color: var(--color-primary); margin-top: var(--space-6); margin-bottom: var(--space-2);">
+          Category A: Presenting Authors
+        </h3>
+        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--space-4);">
+          For presenting authors of each accepted regular paper / short paper / poster presentation
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table data-table--striped">
+            <thead>
+              <tr>
+                <th scope="col">Participant Category</th>
+                <th scope="col">IEEE Members</th>
+                <th scope="col">Non-IEEE Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Students / Research Scholars</strong></td>
+                <td>₹ 6,400 + ₹ 1,152 (18% GST) = <strong>₹ 7,552/-</strong></td>
+                <td>₹ 8,000 + ₹ 1,440 (18% GST) = <strong>₹ 9,440/-</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Academic Faculty / Scientists</strong></td>
+                <td>₹ 7,600 + ₹ 1,368 (18% GST) = <strong>₹ 8,968/-</strong></td>
+                <td>₹ 9,500 + ₹ 1,710 (18% GST) = <strong>₹ 11,210/-</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Industry Delegates</strong></td>
+                <td>₹ 12,000 + ₹ 2,160 (18% GST) = <strong>₹ 14,160/-</strong></td>
+                <td>₹ 12,000 + ₹ 2,160 (18% GST) = <strong>₹ 14,160/-</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Foreign Participants</strong></td>
+                <td><strong>USD $160</strong></td>
+                <td><strong>USD $200</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Category B -->
+        <h3 style="color: var(--color-primary); margin-top: var(--space-8); margin-bottom: var(--space-2);">
+          Category B: Non-Presenting Attendees &amp; Co-Authors
+        </h3>
+        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--space-4);">
+          For non-authors / non-presenting co-authors / general attendees / SRF authors
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table data-table--striped">
+            <thead>
+              <tr>
+                <th scope="col">Participant Category</th>
+                <th scope="col">IEEE Members</th>
+                <th scope="col">Non-IEEE Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Students / Research Scholars</strong></td>
+                <td>₹ 3,200 + ₹ 576 (18% GST) = <strong>₹ 3,776/-</strong></td>
+                <td>₹ 4,000 + ₹ 720 (18% GST) = <strong>₹ 4,720/-</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Academic Faculty / Scientists</strong></td>
+                <td>₹ 3,800 + ₹ 684 (18% GST) = <strong>₹ 4,484/-</strong></td>
+                <td>₹ 4,750 + ₹ 855 (18% GST) = <strong>₹ 5,605/-</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Industry Delegates</strong></td>
+                <td>₹ 6,000 + ₹ 1,080 (18% GST) = <strong>₹ 7,080/-</strong></td>
+                <td>₹ 6,000 + ₹ 1,080 (18% GST) = <strong>₹ 7,080/-</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Foreign Participants</strong></td>
+                <td><strong>USD $80</strong></td>
+                <td><strong>USD $100</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Bank Details -->
+      <article class="content-card">
+        <h2>Bank Payment Details (NEFT / RTGS / IMPS)</h2>
+        <p>Payments may be remitted via wire transfer / electronic transfer using the official bank details below:</p>
+
+        <div class="table-responsive" style="max-width: 700px;">
+          <table class="data-table">
+            <tbody>
+              <tr>
+                <td><strong>Bank Name</strong></td>
+                <td>State Bank of India (SBI)</td>
+              </tr>
+              <tr>
+                <td><strong>Branch Name</strong></td>
+                <td>MANIT, Bhopal</td>
+              </tr>
+              <tr>
+                <td><strong>Account Name</strong></td>
+                <td>Director MANIT Bhopal</td>
+              </tr>
+              <tr>
+                <td><strong>Account Number</strong></td>
+                <td><code>10020150107</code></td>
+              </tr>
+              <tr>
+                <td><strong>IFSC Code</strong></td>
+                <td><code>SBIN0001608</code></td>
+              </tr>
+              <tr>
+                <td><strong>MICR Code</strong></td>
+                <td><code>462002014</code></td>
+              </tr>
+              <tr>
+                <td><strong>SWIFT Code</strong></td>
+                <td><code>SBININBB</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="notice-box notice-box--amber" style="margin-top: var(--space-6);">
+          <h3 class="notice-box__title">Important Remark Notice</h3>
+          <p class="notice-box__text">
+            Please clearly mention in the transaction narration / remark column: <strong>"ICSCMBA - 2026"</strong> along with your Paper ID while initiating payment.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Consistent Global Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
+            <li><a href="call-for-paper.html">Call for Papers</a></li>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
+        </div>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
-        </ul>
-    </nav>
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
 
-      <!-- Banner Section -->
-  <section class="inner-banner">
-    <div class="banner-overlay">
-      <h1>Registration & Payment</h1>
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
     </div>
-  </section>
-
-  <div class="section-container">
-    <section class="call-for-paper-title odd">
-        <div class="call-for-paper-container">
-          <h2>Registration & Payment Process</h2>
-          <div class="call-for-paper-list">
-            <ul>
-                <li>Every accepted paper can have up to 6 pages in the final PDF. If needed, additional pages (maximum 2 more additional pages apart from basic 6 pages) can be added to make the final version of the paper. This has to be done by paying an extra charge of INR 2000 per additional page at the time of author registration payment.</li>
-                <li>The participant must complete the registration and payment process via the registration link after receiving a paper acknowledgement.</li>
-                <li>The conference registration fee includes a kit, admission to all technical sessions, lunch, tea/coffee, and snacks.</li>
-                <li>Do not forget to record transaction details and a screenshot of the transaction, which will be required when registering.</li>
-            </ul>
-            </div>
-        </div>
-    </section>
-    <section class="call-for-paper-title even">
-      <div class="call-for-paper-container">
-          <h2>Registration Fee</h2>
-  
-          <!-- Category A -->
-          <h3 style="color: var(--secondary-color);">Category A: Registration Fees</h3>
-          <p style="text-align: center;">For presenting authors of each accepted regular paper/short paper/poster</p>
-          <table class="fees-table">
-              <tr>
-                  <th>Category</th>
-                  <th>IEEE Members</th>
-                  <th>Non-IEEE Members</th>
-              </tr>
-              <tr>
-                  <td>Students</td>
-                  <td>₹ 6,400 + ₹ 1,152 (18% GST) = ₹ 7,552/-</td>
-                  <td>₹ 8,000 + ₹ 1,440 (18% GST) = ₹ 9,440/-</td>
-              </tr>
-              <tr>
-                  <td>Academic Faculty/Scientists</td>
-                  <td>₹ 7,600 + ₹ 1,368 (18% GST) = ₹ 8,968/-</td>
-                  <td>₹ 9,500 + ₹ 1,710 (18% GST) = ₹ 11,210/-</td>
-              </tr>
-              <tr>
-                  <td>Industry Delegates</td>
-                  <td>₹ 12,000 + ₹ 2,160 (18% GST) = ₹ 14,160/-</td>
-                  <td>₹ 12,000 + ₹ 2,160 (18% GST) = ₹ 14,160/-</td>
-              </tr>
-              <tr>
-                  <td>Foreign Participants</td>
-                  <td>USD $160</td>
-                  <td>USD $200</td>
-              </tr>
-          </table>
-  
-          <!-- Category B -->
-          <h3 style="margin-top: 30px; color: var(--secondary-color);">Category B: Registration Fees</h3>
-          <p style="text-align: center;">For non-authors/non-presenting authors/Design Contest authors/SRF authors</p>
-          <table class="fees-table">
-              <tr>
-                  <th>Category</th>
-                  <th>IEEE Members</th>
-                  <th>Non-IEEE Members</th>
-              </tr>
-              <tr>
-                  <td>Students</td>
-                  <td>₹ 3,200 + ₹ 576 (18% GST) = ₹ 3,776/-</td>
-                  <td>₹ 4,000 + ₹ 720 (18% GST) = ₹ 4,720/-</td>
-              </tr>
-              <tr>
-                  <td>Academic Faculty/Scientists</td>
-                  <td>₹ 3,800 + ₹ 684 (18% GST) = ₹ 4,484/-</td>
-                  <td>₹ 4,750 + ₹ 855 (18% GST) = ₹ 5,605/-</td>
-              </tr>
-              <tr>
-                  <td>Industry Delegates</td>
-                  <td>₹ 6,000 + ₹ 1,080 (18% GST) = ₹ 7,080/-</td>
-                  <td>₹ 6,000 + ₹ 1,080 (18% GST) = ₹ 7,080/-</td>
-              </tr>
-              <tr>
-                  <td>Foreign Participants</td>
-                  <td>USD $80</td>
-                  <td>USD $100</td>
-              </tr>
-          </table>
-  
-      </div>
-  </section>
-    <!-- <section class="call-for-paper-title even">
-        <div class="call-for-paper-container">
-            <h2>Registration Fee</h2>
-            <table class="fees-table">
-                <tr>
-                  <th>Category</th>
-                  <th>India</th>
-                  <th>Overseas</th>
-                </tr>
-                <tr>
-                  <td>Industry Author</td>
-                  <td>₹ 12,000</td>
-                  <td>$ 500</td>
-                </tr>
-                <tr>
-                  <td>Non Student Author</td>
-                  <td>₹ 10,000</td>
-                  <td>$ 350</td>
-                </tr>
-                <tr>
-                  <td>Student Author</td>
-                  <td>₹ 8,000</td>
-                  <td>$ 250</td>
-                </tr>
-                <tr>
-                  <td>Participants</td>
-                  <td>₹ 3,000</td>
-                  <td>$ 100</td>
-                </tr>
-              </table>
-              <p><b>Note:</b> 20% discount will be given to the authors from MANIT Bhopal, India.</p>
-        </div>
-    </section> -->
-    <section class="call-for-paper-title odd">
-        <div class="call-for-paper-container">
-            <h2>Payment Details</h2>
-            <table class="fees-table">
-                <tr>
-                  <td>Bank Name</td>
-                  <td>State Bank of India</td>
-                </tr>
-                <tr>
-                  <td>Branch Name</td>
-                  <td>MANIT, Bhopal</td>
-                </tr>
-                <tr>
-                  <td>Account Name</td>
-                  <td>Director MANIT Bhopal</td>
-                </tr>
-                <tr>
-                  <td>Account No</td>
-                  <td>10020150107</td>
-                </tr>
-                <tr>
-                    <td>IFSC Code</td>
-                    <td>SBIN0001608</td>
-                  </tr>
-                  <tr>
-                    <td>MICR Code</td>
-                    <td>462002014</td>
-                  </tr>
-                  <tr>
-                    <td>SWIFT CODE</td>
-                    <td>SBININBB</td>
-                  </tr>
-              </table>
-            <p><b>Note:</b>  Please clearly mentions in narration in remark column as <b>"ICSCMBA - 2026”</b> while making the payment.</p>
-        </div>
-    </section>
-</div>
-    <!-- Footer -->
-    <footer class="footer-section">
-      <h4>ICSCMBA 2026</h4>
-
-      <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="important-date.html">Important Dates</a></li>
-          <li><a href="call-for-paper.html">Call for Papers</a></li>
-          <li><a href="submission.html">Submission</a></li>
-          <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-      </ul>
-
-      <!-- <div class="social-icons">
-          <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-          <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                  class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-      </div> -->
-
-
-      <div class="footer">
-          <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
-      </div>
   </footer>
-        <script src="./js/style.js"></script>
-    </body>
-    </html>
+
+</body>
+</html>

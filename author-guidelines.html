@@ -1,171 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Guidelines | ICSCMBA 2026</title>
+  <meta name="description" content="Detailed manuscript preparation, Springer format guidelines, templates, and submission instructions for ICSCMBA 2026 authors.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- info: core modular stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- info: modular scripts -->
+  <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
+  <!-- info: navigation header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
         </ul>
-    </nav>
-    <!-- Banner Section -->
-    <section class="inner-banner">
-        <div class="banner-overlay">
-            <h1>Author Guidelines</h1>
-        </div>
-    </section>
-    <div class="section-container">
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Instructions for Preparing Manuscripts
-                </h2>
-                <!-- <div class="call-for-paper-list">
-                    <ul class="highlight-list">
-                      <li>Papers for submission (Maximum 10 pages only) need to be prepared in the Springer format using the templates available online.</li>
-                      <li>Authors need to register themselves in the conference and present their papers in hybrid mode (Limited papers will be allowed for online presentations).</li>
-                      <li>Selected papers presented at ICRAMDS-2025 will be submitted to Springer for possible publication in Springer Proceedings (to be confirmed) after a standard peer-review process.</li>
-                    </ul>
-                </div> -->
-                <p>Prospective authors are invited to submit full-length original research papers. In submitting a
-                    manuscript to ICRAMDS 2025, authors acknowledge that no paper substantially similar in content has been
-                    or will be submitted to another journal, conference or workshop during the review period. In such a
-                    case, the paper will be rejected without review.</p>
-                <p>Papers must be electronically submitted to the Microsoft Research paper submission portal before the
-                    deadline expires without exception.</p>
-                <p>Authors should prepare their manuscripts of 10-15 pages (including all text, figures, and
-                    references). The manuscript must be submitted in pdf format only and the file size of your
-                    manuscript should not exceed 10 MB as per guidelines of Springer-CCIS Series (<a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">Click</a>). If the final
-                    manuscript in Springer format exceeds 15 pages, there will be some additional charges for each extra
-                    page.</p>
-                <p>Use a proper tool to convert the resulting source into a pdf document that has only scalable fonts
-                    with all fonts embedded.</p>
-                <p>The images embedded in the paper must not contain transparent pixels (i.e., an alpha-channel of a
-                    transparent color) since this could lead to problems when displaying or printing the pdf.</p>
-                <p>The pdf manuscript must not have Adobe Document Protection or Document Security enabled.</p>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Proceedings
-                </h2>
-                <p>The proceedings of the conference will be published by Scopus Indexed -Springer in <a
-                        href="https://www.springer.com/series/7899">Communications in Computer and Information Science
-                        series.</a> CCIS is abstracted/indexed in DBLP, Google Scholar, EI-Compendex, Mathematical
-                    Reviews, SCImago, Scopus. CCIS volumes are also generally submitted for inclusion in ISI
-                    Proceedings.</p>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Preparing Your Proceedings Paper</h2>
-                <p>For your convenience, we have summarized in the “Author Guidelines” document how a proceedings paper
-                    should be structured, how elements (headings, figures, references) should be formatted using our
-                    predefined styles, etc. We also give some insight on how your paper will be typeset at ICRAMDS. The PDF
-                    of the Authors Guidelines can be downloaded here: <a
-                        href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">Proceedings
-                        Guidelines for Authors.</a></p>
-                        <p>Authors must use the manuscript template specified here. The LaTeX and Word templates can be downloaded from the following links:</p>
-                <div class="call-for-paper-list">
-                    <ul class="highlight-list">
-                        <li><a href="download-links/LaTeX2e+Proceedings+Templates+download.zip" download>LaTeX Template</a></li>
-                        <li><a href="download-links/Microsoft+Word+Proceedings+Templates.zip" download>Word Template</a></li>
-                    </ul>
-                </div>
-                <p>Authors can use the Proceedings Templates available in the scientific authoring platform Overleaf (<a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi">Template</a>).</p>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Instruction for Manuscript Submission
-                </h2>
-                <p>The manuscript has to be uploaded online at the ICRAMDS 2025 Microsoft Research paper submission portal at the following link:</p>
-                <p style=" overflow-wrap: break-word;
-    word-break: break-word;"><a href="https://cmt3.research.microsoft.com/ICRAMDS2025">https://cmt3.research.microsoft.com/ICRAMDS2025</a>
-
-                   
-            </div>
-        </section>
+      </nav>
     </div>
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
+  </header>
 
-        <ul class="footer-links">
+  <main>
+    <!-- info: inner page banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">Author Guidelines</h1>
+      </div>
+    </section>
+
+    <!-- info: main content section -->
+    <div class="container section">
+
+      <!-- info: manuscript preparation guidelines -->
+      <article class="content-card">
+        <h2>Instructions for Preparing Manuscripts</h2>
+        <p>
+          Prospective authors are cordially invited to submit full-length original, unpublished research papers. In submitting a manuscript to ICSCMBA 2026, authors acknowledge that no paper substantially similar in content has been or will be submitted to another journal, conference, or workshop during the active review period. Duplicate or dual submissions will be rejected without peer review.
+        </p>
+        
+        <ul class="list-check">
+          <li><strong>Submission Format:</strong> All manuscripts must be electronically submitted in PDF format via the Microsoft Research CMT portal before the deadline.</li>
+          <li><strong>Page Limit:</strong> Authors should prepare manuscripts of 10 to 15 pages (including all text, equations, figures, tables, and references) adhering strictly to Springer-CCIS formatting standards.</li>
+          <li><strong>File Constraints:</strong> The manuscript PDF file size must not exceed 10 MB. All fonts must be embedded and scalable.</li>
+          <li><strong>Image Requirements:</strong> Embedded images must not contain transparent alpha-channels to ensure crisp rendering during printing and digital typesetting.</li>
+          <li><strong>PDF Security:</strong> Ensure no Adobe Document Protection, watermarks, or security encryption is enabled on the submitted PDF.</li>
+        </ul>
+      </article>
+
+      <!-- info: proceedings publication and indexing -->
+      <article class="content-card">
+        <h2>Proceedings &amp; Indexing</h2>
+        <p>
+          The proceedings of the conference will be published by Scopus-indexed Springer in the prestigious <strong>Communications in Computer and Information Science (CCIS)</strong> series (<a href="https://www.springer.com/series/7899" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: underline; font-weight: 600;">CCIS Series Details</a>).
+        </p>
+        <div class="notice-box notice-box--blue">
+          <h3 class="notice-box__title">Indexing &amp; Abstracting</h3>
+          <p class="notice-box__text">
+            Springer CCIS volumes are abstracted and indexed in major databases including DBLP, Google Scholar, EI-Compendex, Mathematical Reviews, SCImago, and Scopus, and submitted for inclusion in ISI Proceedings.
+          </p>
+        </div>
+      </article>
+
+      <!-- info: author manuscript templates -->
+      <article class="content-card">
+        <h2>Preparing Your Proceedings Paper</h2>
+        <p>
+          Authors must structure and format their proceedings papers using the predefined Springer templates. Detailed guidelines are available directly from Springer: <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: underline; font-weight: 600;">Springer Proceedings Guidelines for Authors</a>.
+        </p>
+        
+        <!-- info: template download box -->
+        <div class="download-box">
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-1);">Official Springer Manuscript Templates</h3>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0;">Download ready-to-use formatting templates for LaTeX and Microsoft Word</p>
+          </div>
+          <div class="download-box__links">
+            <a href="assets/downloads/LaTeX2e+Proceedings+Templates+download.zip" download class="btn btn--primary btn--sm">
+              LaTeX Template (.zip)
+            </a>
+            <a href="assets/downloads/Microsoft+Word+Proceedings+Templates.zip" download class="btn btn--primary btn--sm">
+              Word Template (.zip)
+            </a>
+          </div>
+        </div>
+
+        <p style="margin-top: var(--space-4);">
+          Authors using the collaborative scientific authoring platform Overleaf may use the official Springer template: <a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: underline; font-weight: 600;">Open Springer Template in Overleaf</a>.
+        </p>
+      </article>
+
+      <!-- info: online manuscript submission portal -->
+      <article class="content-card">
+        <h2>Instruction for Manuscript Submission</h2>
+        <p>
+          Manuscripts must be uploaded online via the official Microsoft Research CMT paper submission portal:
+        </p>
+        <div style="margin-top: var(--space-4);">
+          <a href="https://cmt3.research.microsoft.com/ICRAMDS2025" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--lg" style="word-break: break-all;">
+            Open Microsoft CMT Submission Portal
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- info: consistent global footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/style.js"></script>
-</body>
 
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

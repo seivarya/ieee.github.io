@@ -1,274 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICSCMBA 2026 | 1st International Conference on Secure Computing, Computational Mechanics & Business Analytics</title>
+  <meta name="description" content="1st International Conference on Secure Computing, Computational Mechanics & Business Analytics (ICSCMBA 2026), 11-12 December 2026, MANIT Bhopal, India.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- info: core modular stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/home.css">
 
+  <!-- info: modular scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/gallery.js" defer></script>
 </head>
-<!--important note 
-submission tab shows register now page
--->
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
+  <!-- info: navigation header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section with Slider -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>1<sup>st</sup> International Conference on <br>
-                Secure Computing, Computational Mechanics & Business Analytics</h1>
-            <p>11-12 December, 2026 | MANIT Bhopal - 462003, INDIA</p>
-            <div class="hero-buttons">
-                <a href="important-date.html" class="herosection-button">Important Dates</a>
-                <a href="#" class="herosection-button">Submission</a>
-            </div>
+  <main>
+    <!-- info: hero section with crossfade slider -->
+    <section class="hero" aria-label="Conference Highlights">
+      <div class="hero__slider" id="heroSlider">
+        <img src="assets/images/campus/manit-maingate.jpg" alt="MANIT Main Gate" class="hero__slide is-active">
+        <img src="assets/images/campus/manit.png" alt="MANIT Campus Building" class="hero__slide">
+        <img src="assets/images/campus/manit-republicday.jpg" alt="MANIT Celebrations" class="hero__slide">
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <span class="hero__badge">Hybrid Mode (In-Person &amp; Virtual)</span>
+        <h1 class="hero__title">
+          1<sup>st</sup> International Conference on<br>
+          Secure Computing, Computational Mechanics &amp; Business Analytics
+        </h1>
+        <p class="hero__subtitle">ICSCMBA 2026</p>
+        <div class="hero__date-venue">
+          <span>11–12 December, 2026</span>
+          <span>•</span>
+          <span>MANIT Bhopal - 462003, INDIA</span>
         </div>
-        <div class="slider" id="slider">
-            <img src="./images/manit-maingate.jpg" alt="Slide 1" class="slide active">
-            <img src="./images/manit.png" alt="Slide 2" class="slide">
-            <img src="./images/manit-republicday.jpg" alt="Slide 3" class="slide">
-            <div class="arrow left" id="prev">&#10094;</div>
-            <div class="arrow right" id="next">&#10095;</div>
+        <div class="hero__actions">
+          <a href="important-date.html" class="btn btn--accent btn--lg">Important Dates</a>
+          <a href="call-for-paper.html" class="btn btn--outline-white btn--lg">Call for Papers</a>
+          <a href="author-guidelines.html" class="btn btn--outline-white btn--lg">Submission Portal</a>
         </div>
+      </div>
+
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous Slide">&#10094;</button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next Slide">&#10095;</button>
     </section>
-    <!-- Conference & News Section -->
-    <section class="info-section">
-        <div class="about-conference">
-            <h2>About the Conference</h2>
+
+    <!-- info: overview and news section -->
+    <section class="section">
+      <div class="container">
+        <div class="home-overview">
+          <!-- info: about conference card -->
+          <article class="home-about-card">
+            <header class="section-header">
+              <h2>About the Conference</h2>
+            </header>
             <p>
-                The Department of Mathematics, Bioinformatics, and Computer
-                Applications is proud to announce the International Conference on Secure Computing, Computational Mechanics & Business Analytics (ICSCMBA - 2026), which will be organized
-                in a hybrid mode — offering both virtual and in-person participation
-                options.
-                <b>The conference proceedings will be published in Springer - CCIS
-                    series (indexed in Scopus, SCImago, DBLP, Google Scholar)</b>
-                This conference aims to provide a dynamic platform for students,
-                scientists, researchers, and professionals from industry and academia
-                to come together and share their latest research findings, innovative
-                ideas, and technological advancements in the diverse fields of
-                Mathematics and Data Science. By bringing together a wide spectrum of
-                participants, ICSCMBA - 2026 seeks to foster interdisciplinary
-                collaborations, inspire new research directions, and strengthen the
-                exchange of knowledge across these critical domains.
+              The Department of Mathematics, Bioinformatics, and Computer Applications is proud to announce the International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics (ICSCMBA - 2026), which will be organized in a hybrid mode — offering both virtual and in-person participation options.
             </p>
-            <p style="padding-top: 10px;">
-                The conference program will feature a rich blend of activities,
-                including keynote addresses by eminent speakers, invited talks by
-                distinguished researchers, and paper presentation sessions where
-                participants can showcase their original work. This interactive
-                environment will facilitate meaningful discussions, networking
-                opportunities, and professional development. Certificates will be
-                awarded to all registered participants who present their papers and
-                attend the sessions, recognizing their valuable contributions and
-                engagement with the conference. ICSCMBA - 2026 promises to be an
-                enriching academic event that not only highlights cutting-edge
-                research but also encourages the growth and interaction of the global
-                Mathematics and Data Science community.
+            <p>
+              <strong>The conference proceedings will be published in Springer - CCIS series (indexed in Scopus, SCImago, DBLP, Google Scholar).</strong>
             </p>
-        </div>
+            <p>
+              This conference aims to provide a dynamic platform for students, scientists, researchers, and professionals from industry and academia to come together and share their latest research findings, innovative ideas, and technological advancements in the diverse fields of Mathematics, Computing, and Data Science. By bringing together a wide spectrum of participants, ICSCMBA - 2026 seeks to foster interdisciplinary collaborations, inspire new research directions, and strengthen the exchange of knowledge across these critical domains.
+            </p>
+            <p>
+              The conference program will feature a rich blend of activities, including keynote addresses by eminent speakers, invited talks by distinguished researchers, and paper presentation sessions where participants can showcase their original work. Certificates will be awarded to all registered participants who present their papers and attend the sessions.
+            </p>
+          </article>
 
-        <div class="notice-board">
-            <h2>Latest News & Notices</h2>
-            <div class="notice notice1">
-                <h3>Call for Papers Open</h3>
-                <p>We are now accepting paper submissions for ICRAMDS 2025. Deadline: June 25, 2025.</p>
+          <!-- info: notice board card -->
+          <aside class="home-notice-card" aria-label="Latest News and Notices">
+            <h3 class="home-notice-card__title">
+              Latest News &amp; Notices
+            </h3>
+            
+            <div class="notice-box notice-box--blue">
+              <h4 class="notice-box__title">Call for Papers Open</h4>
+              <p class="notice-box__text">We are now accepting original research paper submissions for ICSCMBA 2026 via Microsoft CMT.</p>
             </div>
-            <div class="notice notice2">
-                <h3>Early Bird Registration</h3>
-                <p>Participants are encouraged to complete Early Bird Registration to avoid last-minute rush. No
-                    discounts will be provided all attendees will be charged the standard registration fee</p>
+
+            <div class="notice-box notice-box--green">
+              <h4 class="notice-box__title">Early Bird Registration</h4>
+              <p class="notice-box__text">Participants are encouraged to complete registration early to secure presentation slots.</p>
             </div>
-            <div class="notice notice3">
-                <h3>Conference Dates</h3>
-                <p>December 11-12, 2026</p>
+
+            <div class="notice-box notice-box--amber">
+              <h4 class="notice-box__title">Conference Dates</h4>
+              <p class="notice-box__text">December 11–12, 2026 | Hybrid Mode at MANIT Bhopal, India.</p>
             </div>
+          </aside>
         </div>
+      </div>
     </section>
-    <!--important dataes-->
-    <section class="important-dates">
-        <h2>Important Dates</h2>
-        <div class="dates-table-container">
-            <table class="dates-table">
-                <thead>
-                    <tr>
-                        <th>Event</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- <tr>
-                        <td>Full Paper Submission Starts</td>
-                        <td>May 1, 2025</td>
-                    </tr> -->
-                    <tr>
-                      <td>Last Date of Submission</td>
-                      <td>31st August, 2026</td>
-                  </tr>
-                  <tr>
-                      <td>Paper Acceptance Notification</td>
-                      <td>15th September, 2026</td>
-                  </tr>
-                   <tr>
-                      <td>Camera Ready Paper</td>
-                      <td>30th September, 2026</td>
-                  </tr>
-                 <tr>
-                      <td>Conference Dates</td>
-                      <td>11-12 Dec, 2026</td>
-                  </tr>
-                </tbody>
-            </table>
+
+    <!-- info: important dates section -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2>Important Dates</h2>
+          <p>Please note the schedule and deadlines for paper submissions and registrations</p>
+        </header>
+
+        <div class="table-responsive" style="max-width: 800px; margin: 0 auto;">
+          <table class="data-table data-table--striped">
+            <thead>
+              <tr>
+                <th scope="col">Event / Milestone</th>
+                <th scope="col">Important Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Last Date of Submission</strong></td>
+                <td><span class="badge badge--accent">31st August, 2026</span></td>
+              </tr>
+              <tr>
+                <td><strong>Paper Acceptance Notification</strong></td>
+                <td>15th September, 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Camera Ready Paper Submission</strong></td>
+                <td>30th September, 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Conference Dates</strong></td>
+                <td><strong style="color: var(--color-primary);">11–12 December, 2026</strong></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
     </section>
-    <!--track of conference-->
-    <section class="topics-section">
-        <h2>Themes of ICSCMBA - 2026</h2>
-        <div class="topics-columns">
-            <ul>
-                <li><strong>Track 1: Secure Computing &amp; Computational Intelligence</strong></li>
-                <li>Cryptography</li>
-                <li>Blockchains</li>
-                <li>Distributed Systems</li>
-                <li>High Performance Computing</li>
-                <li>Cloud &amp; Edge Computing</li>
-                <li>Internet of Things (IoT)</li>
-                <li>Data Science &amp; Big Data Analytics</li>
-                <li>AI &amp; ML/DL</li>
-                <li>Quantum Computing</li>
+
+    <!-- info: themes and tracks of icscmba 2026 -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2>Themes of ICSCMBA - 2026</h2>
+          <p>Interdisciplinary tracks covering computing, engineering mechanics, and analytics</p>
+        </header>
+
+        <div class="tracks-grid">
+          <!-- info: track 1 -->
+          <article class="track-card">
+            <h3 class="track-card__title">Track 1: Secure Computing &amp; Computational Intelligence</h3>
+            <ul class="track-card__list">
+              <li>Cryptography &amp; Network Security</li>
+              <li>Blockchains &amp; Distributed Ledgers</li>
+              <li>Distributed &amp; Parallel Systems</li>
+              <li>High Performance Computing (HPC)</li>
+              <li>Cloud &amp; Edge Computing</li>
+              <li>Internet of Things (IoT)</li>
+              <li>Data Science &amp; Big Data Analytics</li>
+              <li>AI &amp; Machine Learning / Deep Learning</li>
+              <li>Quantum Computing</li>
             </ul>
-            <ul>
-                <li><strong>Track 2: Computational Mechanics &amp; Engineering Systems</strong></li>
-                <li>Computational Fluid Dynamics (CFD)</li>
-                <li>Finite Element Analysis (FEA)</li>
-                <li>Numerical Methods for Engineering</li>
-                <li>Multiphysics Modeling</li>
-                <li>AI in Engineering Simulation</li>
-                <li>Computational Bio Mechanics &amp; Energy Harvesting</li>
-                <li>MEMS &amp; NEMS</li>
+          </article>
+
+          <!-- info: track 2 -->
+          <article class="track-card">
+            <h3 class="track-card__title">Track 2: Computational Mechanics &amp; Engineering Systems</h3>
+            <ul class="track-card__list">
+              <li>Computational Fluid Dynamics (CFD)</li>
+              <li>Finite Element Analysis (FEA)</li>
+              <li>Numerical Methods for Engineering</li>
+              <li>Multiphysics Modeling</li>
+              <li>AI in Engineering Simulation</li>
+              <li>Computational Biomechanics &amp; Energy Harvesting</li>
+              <li>MEMS &amp; NEMS</li>
             </ul>
-            <ul>
-                <li><strong>Track 3: Business Analytics &amp; Management Science</strong></li>
-                <li>Machine Learning for Finance</li>
-                <li>Blockchain in FinTech</li>
-                <li>Operations Research &amp; Optimization</li>
-                <li>Supply Chain Analytics</li>
-                <li>Decision Support Systems</li>
-                <li>Risk &amp; Fraud Analytics</li>
-                <li>HR &amp; Marketing Analytics</li>
+          </article>
+
+          <!-- info: track 3 -->
+          <article class="track-card">
+            <h3 class="track-card__title">Track 3: Business Analytics &amp; Management Science</h3>
+            <ul class="track-card__list">
+              <li>Machine Learning for Finance</li>
+              <li>Blockchain in FinTech</li>
+              <li>Operations Research &amp; Optimization</li>
+              <li>Supply Chain Analytics</li>
+              <li>Decision Support Systems</li>
+              <li>Risk &amp; Fraud Analytics</li>
+              <li>HR &amp; Marketing Analytics</li>
             </ul>
+          </article>
         </div>
+      </div>
     </section>
 
+    <!-- info: nearby places gallery slider -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2>Nearby Places to Visit</h2>
+          <p>Explore historic and cultural attractions around Bhopal during your conference visit</p>
+        </header>
 
+        <div class="gallery-wrapper" aria-label="Nearby Places Photo Slider">
+          <div class="gallery-slider">
+            <div class="gallery-slide is-active">
+              <img src="assets/images/places/ujjain.jpg" alt="Mahakaleshwar Temple in Ujjain">
+              <div class="gallery-caption">Ujjain - The City of Mahakal</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/places/bhimbetka.jpg" alt="Bhimbetka Rock Shelters">
+              <div class="gallery-caption">Bhimbetka - UNESCO World Heritage Rock Caves</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/places/sanchi.jpg" alt="Great Stupa at Sanchi">
+              <div class="gallery-caption">Sanchi - Great Stupa &amp; Buddhist Monuments</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/places/bhojpur-temple.jpg" alt="Bhojpur Shiva Temple">
+              <div class="gallery-caption">Bhojpur Temple - Historic Shiva Temple</div>
+            </div>
+            <div class="gallery-slide">
+              <img src="assets/images/places/Udayagiri-Caves.jpg" alt="Udayagiri Caves">
+              <div class="gallery-caption">Udayagiri Caves - Ancient Rock-cut Sanctuaries</div>
+            </div>
+          </div>
 
-    <!--near by places-->
-    <section class="gallery-section">
-        <h2>Nearby Places to Visit</h2>
-        <div class="gallery-slider">
-            <div class="gallery-slide active">
-                <img src="images/ujjain.jpg" alt="Ujjain">
-                <div class="slide-caption">Ujjain</div>
-            </div>
-            <div class="gallery-slide">
-                <img src="images/bhimbetka.jpg" alt="Bhimbetka">
-                <div class="slide-caption">Bhimbetka</div>
-            </div>
-            <div class="gallery-slide">
-                <img src="images/sanchi.jpg" alt="Sanchi">
-                <div class="slide-caption">Sanchi</div>
-            </div>
-            <div class="gallery-slide">
-                <img src="images/bhojpur-temple.jpg" alt="Bhojpur temple">
-                <div class="slide-caption">Bhojpur temple</div>
-            </div>
-            <div class="gallery-slide">
-                <img src="images/Udayagiri-Caves.jpg" alt="Udayagiri-Caves">
-                <div class="slide-caption">Udayagiri-Caves</div>
-            </div>
-            <button class="gallery-prev">&#10094;</button>
-            <button class="gallery-next">&#10095;</button>
+          <button class="gallery-btn gallery-btn--prev" aria-label="Previous image">&#10094;</button>
+          <button class="gallery-btn gallery-btn--next" aria-label="Next image">&#10095;</button>
         </div>
+        
+        <div style="text-align: center; margin-top: var(--space-6);">
+          <a href="nearby-places.html" class="btn btn--outline">View All Nearby Attractions &rarr;</a>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
+  <!-- info: consistent global footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
 
-        <ul class="footer-links">
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/style.js"></script>
-</body>
 
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

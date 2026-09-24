@@ -1,200 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call for Papers | ICSCMBA 2026</title>
+  <meta name="description" content="Call for papers for ICSCMBA 2026 across secure computing, computational mechanics, and business analytics at MANIT Bhopal.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- Core Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- Modular Scripts -->
+  <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
+  <!-- Navigation Header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
         </ul>
-    </nav>
-
-    <!-- Banner Section -->
-    <section class="inner-banner">
-        <div class="banner-overlay">
-            <h1>Call for Papers</h1>
-        </div>
-    </section>
-    <div class="section-container">
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Submission Invitation</h2>
-                <p>The International Conference on Secure Computing, Computational Mechanics & Business Analytics (ICSCMBA - 2026)
-                    invites
-                    researchers, scientists, students, and industry experts to submit original research contributions.
-                    This
-                    conference provides a vital platform for sharing innovative ideas and groundbreaking findings in the
-                    interconnected fields of mathematics and data science.We encourage submissions exploring applied
-                    mathematics, statistical modeling, machine learning, artificial
-                    intelligence, data analytics, and other relevant areas. Join us in advancing knowledge and shaping
-                    the
-                    future of these rapidly evolving fields.
-                </p>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <section class="topics-section">
-                    <h2>Themes of ICSCMBA - 2026</h2>
-                    <p>Integrating Security, Computational Modeling and Digital Business Transformation 
-                    </p>
-                    <div class="topics-columns" id="authors-topics-columns">
-                        <ul>
-                            <li><strong>Track 1: Secure Computing &amp; Computational Intelligence</strong></li>
-                            <li>Cryptography</li>
-                            <li>Blockchains</li>
-                            <li>Distributed Systems</li>
-                            <li>High Performance Computing</li>
-                            <li>Cloud &amp; Edge Computing</li>
-                            <li>Internet of Things (IoT)</li>
-                            <li>Data Science &amp; Big Data Analytics</li>
-                            <li>AI &amp; ML/DL</li>
-                            <li>Quantum Computing</li>
-                        </ul>
-                        <ul>
-                            <li><strong>Track 2: Computational Mechanics &amp; Engineering Systems</strong></li>
-                            <li>Computational Fluid Dynamics (CFD)</li>
-                            <li>Finite Element Analysis (FEA)</li>
-                            <li>Numerical Methods for Engineering</li>
-                            <li>Multiphysics Modeling</li>
-                            <li>AI in Engineering Simulation</li>
-                            <li>Computational Bio Mechanics &amp; Energy Harvesting</li>
-                            <li>MEMS &amp; NEMS</li>
-                        </ul>
-                        <ul>
-                            <li><strong>Track 3: Business Analytics &amp; Management Science</strong></li>
-                            <li>Machine Learning for Finance</li>
-                            <li>Blockchain in FinTech</li>
-                            <li>Operations Research &amp; Optimization</li>
-                            <li>Supply Chain Analytics</li>
-                            <li>Decision Support Systems</li>
-                            <li>Risk &amp; Fraud Analytics</li>
-                            <li>HR &amp; Marketing Analytics</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Full-length Paper Submission</h2>
-                <p>Prospective author(s) are invited to submit the full-length paper in the given format electronically
-                    by
-                    25 June 2025. The length of the paper shall be limited to 10 pages as per the format. One of the
-                    authors must register and present the paper for inclusion in the conference proceedings.
-
-                    Selected papers will be published in Scopus-indexed Springer conference proceedings after peer
-                    review.
-                    Esteemed authors are requested to visit the conference website for further details.<a
-                        href="https://www.manit.ac.in/"> MANIT</a>.
-                </p>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Publication and Indexing</h2>
-                <p>All previous editions of CVIP have been successfully published in Springer, Communications in
-                    Computer and Information Science series (CCIS). Conference Proceedings will be abstracted and
-                    indexed in DBLP, Google Scholar, EI-Compendex, Mathematical Reviews, ISI Proceedings, SCImago, and
-                    Scopus. CVIP 2025 Proceedings will also be published in scopus indexed Springer CCIS series.
-                </p>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Important Note</h2>
-                <p>Selected papers from the conference will be published by Springer as a proceedings book volume
-                    (LNCS).
-                    Springer will conduct quality checks on the accepted papers, and only papers that pass these checks
-                    will
-                    be published. Springer Nature does not charge any money for publication of Non-Open Access content.
-                    Abstracts/extended abstracts and short papers (less than 10 pages) are not considered for
-                    publication.
-                </p>
-                <h4>*Only manuscripts below 20% similarity index (By plagiarism check) will be considered for review and
-                    further processing.</h4>
-            </div>
-        </section>
+      </nav>
     </div>
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
+  </header>
 
-        <ul class="footer-links">
+  <main>
+    <!-- Inner Banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">Call for Papers</h1>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container section">
+
+      <!-- Submission Invitation -->
+      <article class="content-card">
+        <h2>Submission Invitation</h2>
+        <p>
+          The International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics (ICSCMBA - 2026) warmly invites researchers, academicians, scientists, postgraduate scholars, and industry professionals to submit original, high-quality research contributions.
+        </p>
+        <p>
+          This conference provides an esteemed academic platform for sharing innovative ideas, groundbreaking experimental findings, and real-world implementations in the interconnected spheres of secure computing, computational mechanics, statistical modeling, machine learning, and data analytics.
+        </p>
+      </article>
+
+      <!-- Conference Themes / Tracks -->
+      <article class="content-card">
+        <h2>Themes of ICSCMBA - 2026</h2>
+        <p><em>Integrating Security, Computational Modeling, and Digital Business Transformation</em></p>
+
+        <div class="topics-grid-3">
+          <!-- Track 1 -->
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-3); border-bottom: 2px solid var(--color-accent); padding-bottom: var(--space-1);">Track 1: Secure Computing &amp; Computational Intelligence</h3>
+            <ul class="list-check">
+              <li>Cryptography &amp; Security Protocols</li>
+              <li>Blockchains &amp; Distributed Ledgers</li>
+              <li>Distributed &amp; Parallel Systems</li>
+              <li>High-Performance Computing (HPC)</li>
+              <li>Cloud &amp; Edge Computing</li>
+              <li>Internet of Things (IoT)</li>
+              <li>Data Science &amp; Big Data Analytics</li>
+              <li>AI &amp; Machine Learning / Deep Learning</li>
+              <li>Quantum Computing</li>
+            </ul>
+          </div>
+
+          <!-- Track 2 -->
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-3); border-bottom: 2px solid var(--color-accent); padding-bottom: var(--space-1);">Track 2: Computational Mechanics &amp; Engineering Systems</h3>
+            <ul class="list-check">
+              <li>Computational Fluid Dynamics (CFD)</li>
+              <li>Finite Element Analysis (FEA)</li>
+              <li>Numerical Methods for Engineering</li>
+              <li>Multiphysics Modeling &amp; Simulation</li>
+              <li>AI in Engineering Simulations</li>
+              <li>Computational Biomechanics</li>
+              <li>Energy Harvesting Systems</li>
+              <li>MEMS &amp; NEMS Technologies</li>
+            </ul>
+          </div>
+
+          <!-- Track 3 -->
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-3); border-bottom: 2px solid var(--color-accent); padding-bottom: var(--space-1);">Track 3: Business Analytics &amp; Management Science</h3>
+            <ul class="list-check">
+              <li>Machine Learning for Finance &amp; Econometrics</li>
+              <li>Blockchain in FinTech</li>
+              <li>Operations Research &amp; Optimization</li>
+              <li>Supply Chain &amp; Logistics Analytics</li>
+              <li>Intelligent Decision Support Systems</li>
+              <li>Risk &amp; Financial Fraud Analytics</li>
+              <li>HR &amp; Marketing Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Full-Length Paper Submission -->
+      <article class="content-card">
+        <h2>Full-Length Paper Submission</h2>
+        <p>
+          Authors are invited to submit full-length papers strictly adhering to the Springer proceedings formatting guidelines. Submissions must be uploaded online electronically by the submission deadline. At least one author of each accepted paper must register and present the paper for it to be included in the conference proceedings.
+        </p>
+        <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-4);">
+          <a href="author-guidelines.html" class="btn btn--primary">View Author Guidelines &amp; Templates</a>
+          <a href="https://cmt3.research.microsoft.com/ICRAMDS2025" target="_blank" rel="noopener noreferrer" class="btn btn--accent">Submit via Microsoft CMT</a>
+        </div>
+      </article>
+
+      <!-- Publication and Indexing -->
+      <article class="content-card">
+        <h2>Publication &amp; Indexing</h2>
+        <p>
+          Conference proceedings will be published by Springer in the <strong>Communications in Computer and Information Science (CCIS)</strong> series. Springer CCIS volumes are indexed in Scopus, DBLP, Google Scholar, EI-Compendex, Mathematical Reviews, and SCImago, and submitted for inclusion in ISI Proceedings.
+        </p>
+      </article>
+
+      <!-- Important Notes on Quality & Plagiarism -->
+      <article class="content-card">
+        <h2>Important Note on Quality &amp; Plagiarism Policy</h2>
+        <p>
+          Accepted papers must pass Springer's rigorous technical and ethical quality checks prior to final publication. Springer Nature does not charge publication fees for non-open-access proceedings content. Short papers (less than 10 pages) or extended abstracts will not be considered for publication.
+        </p>
+        <div class="notice-box notice-box--amber" style="margin-top: var(--space-4);">
+          <h3 class="notice-box__title">Plagiarism Threshold</h3>
+          <p class="notice-box__text">
+            * Only original manuscripts with an overall similarity index of strictly below 20% (verified via institutional plagiarism detection tools) will be considered for peer review and further publication processing.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Consistent Global Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/style.js"></script>
-</body>
 
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

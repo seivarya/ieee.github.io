@@ -1,194 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Conference | ICSCMBA 2026</title>
+  <meta name="description" content="Learn about the 1st International Conference on Secure Computing, Computational Mechanics & Business Analytics (ICSCMBA 2026), hosted at MANIT Bhopal.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- info: core modular stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- info: modular scripts -->
+  <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-       <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
+  <!-- info: navigation header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Banner Section -->
+  <main>
+    <!-- info: inner page banner -->
     <section class="inner-banner">
-        <div class="banner-overlay">
-            <h1>About Conference</h1>
-        </div>
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">About Conference</h1>
+      </div>
     </section>
-    <div class="section-container">
-        <section class="venue-section">
-            <div class="venue-text" id="about-conference-venue-text">
-                <h2>ICSCMBA - 2026</h2>
-                <p>
-                    The International Conference on Secure Computing, Computational Mechanics & Business Analytics (ICSCMBA - 2026) is a premier forum for the exchange of cutting-edge research and ideas in the fields of mathematics and data science.
 
-                </p>
-                <p>
-                    This conference aims to bring together faculty, scientists, researchers, and students from both industry and academia to share their latest findings and advancements.  ICSCMBA - 2026 will be held in hybrid mode, offering both virtual and in-person participation options, ensuring accessibility for a global audience.
-                </p>
-            </div>
-            <div class="venue-image">
-                <img src="./images/manit.png" alt="Venue Image">
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Conference Objectives</h2>
-                <div class="call-for-paper-list">
-                    <p>ICSCMBA - 2026 has the following key objectives:</p>
-                    <ul class="highlight-list">
-                      <li>To provide a platform for student, researchers and dissemination of the latest research in mathematics and data science.</li>
-                      <li>To foster collaboration and networking among researchers, scientists, and industry professionals.</li>
-                      <li>To promote innovation and advancements in the theoretical and practical applications of mathematics and data science.</li>
-                      <li>To facilitate discussions on emerging trends and challenges in these dynamic fields.</li>
-                      <li>To offer opportunities for professional development through keynote presentations, invited lectures, and papers.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Conference Highlights</h2>
-                <div class="call-for-paper-list">
-                    <p>ICSCMBA - 2026 will feature a diverse range of activities, including:</p>
-                    <ul class="highlight-list">
-                      <li>Keynote lectures by renowned experts in mathematics and data science.</li>
-                      <li>Invited talks by leading researchers.</li>
-                      <li>Paper presentations showcasing original research contributions.</li>
-                      <li>Certificates for participants presenting papers and attending the program.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Themes of ICSCMBA - 2026</h2>
-                <div class="topics-columns">
-                    <ul>
-                        <li>Algebra, Linear Algebra and Geometry</li>
-                        <li>Number Theory and Numerical Analysis</li>
-                        <li>Mathematical Modeling and Fluid Dynamics</li>
-                        <li>Blockchain Security and Applications</li>
-                        <li>Financial Mathematics</li>
-                        <li>Quantum Computing</li>
-                        <li>Cyber security and Privacy</li>
-                        <li>Software Architecture and Design Pattern</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Machine Learning and Deep Learning</li>
-                        <li>Next Generation Network</li>
-                    </ul>
-                    <ul>
-                        <li>Discrete Mathematics and Graph Theory</li>
-                        <li>Fixed Point Theory and Fuzzy Mathematics</li>
-                        <li>Cryptography and Coding Theory</li>
-                        <li>Operations Research</li>
-                        <li>Probability and Statistics</li>
-                        <li>High-Performance Computing</li>
-                        <li>Cloud Computing</li>
-                        <li>Internet of Things</li>
-                        <li>Information Retrieval</li>
-                        <li>Data warehousing and Mining</li>
-                        <li>Computer Vision and Image Processing</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="venue-section">
-            <div class="venue-text">
-                <h2>Publication Opportunities</h2>
-                <p>
-                    Selected papers presented at ICSCMBA - 2026 will be submitted to Springer for possible publication in Springer Proceedings after a standard peer-review process.
-                </p>
-                <p>
-                    Publication in Springer Proceedings is subject to the final decision of Springer.
-                </p>
-            </div>
-            <div class="venue-image">
-                <img src="./images/publication.png" alt="Venue Image">
-            </div>
-        </section>
-    </div> 
+    <!-- info: main content section -->
+    <div class="container section">
+      <!-- info: conference overview split -->
+      <article class="content-card">
+        <div class="content-split">
+          <div class="content-split__text">
+            <h2>ICSCMBA - 2026</h2>
+            <p>
+              The International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics (ICSCMBA - 2026) is a premier forum for the exchange of cutting-edge research and ideas in the fields of mathematics, engineering mechanics, secure computing, and data analytics.
+            </p>
+            <p>
+              This conference aims to bring together faculty, scientists, researchers, and students from both industry and academia to share their latest findings and advancements. ICSCMBA - 2026 will be held in hybrid mode, offering both virtual and in-person participation options, ensuring accessibility for a global audience.
+            </p>
+          </div>
+          <div class="content-split__media">
+            <img src="assets/images/campus/manit.png" alt="MANIT Bhopal Campus Building">
+          </div>
+        </div>
+      </article>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
+      <!-- Conference Objectives -->
+      <article class="content-card">
+        <h2>Conference Objectives</h2>
+        <p>ICSCMBA - 2026 has the following key objectives:</p>
+        <ul class="list-check">
+          <li>To provide a platform for students and researchers to disseminate the latest research in mathematics, secure computing, and data science.</li>
+          <li>To foster collaboration and networking among researchers, scientists, and industry professionals across disciplines.</li>
+          <li>To promote innovation and advancements in the theoretical and practical applications of computational intelligence and analytics.</li>
+          <li>To facilitate discussions on emerging trends and challenges in these dynamic fields.</li>
+          <li>To offer opportunities for professional development through keynote presentations, invited lectures, and research papers.</li>
+        </ul>
+      </article>
 
-        <ul class="footer-links">
+      <!-- Conference Highlights -->
+      <article class="content-card">
+        <h2>Conference Highlights</h2>
+        <p>ICSCMBA - 2026 will feature a diverse range of academic activities, including:</p>
+        <ul class="list-check">
+          <li>Keynote lectures by internationally renowned experts in secure computing, mechanics, and data science.</li>
+          <li>Invited talks and interactive panel discussions by distinguished researchers.</li>
+          <li>Technical paper presentation sessions showcasing peer-reviewed original research contributions.</li>
+          <li>Official presentation and participation certificates awarded to all registered authors and attendees.</li>
+        </ul>
+      </article>
+
+      <!-- Themes of ICSCMBA - 2026 -->
+      <article class="content-card">
+        <h2>Themes of ICSCMBA - 2026</h2>
+        <p>The conference solicits contributions across a broad spectrum of research domains, categorized into major topic groups:</p>
+        
+        <div class="topics-grid-3">
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-3); border-bottom: 2px solid var(--color-accent); padding-bottom: var(--space-1);">Computational Mathematics</h3>
+            <ul class="list-check">
+              <li>Algebra, Linear Algebra &amp; Geometry</li>
+              <li>Number Theory &amp; Numerical Analysis</li>
+              <li>Mathematical Modeling &amp; Fluid Dynamics</li>
+              <li>Financial Mathematics</li>
+              <li>Discrete Mathematics &amp; Graph Theory</li>
+              <li>Fixed Point Theory &amp; Fuzzy Mathematics</li>
+              <li>Probability &amp; Statistics</li>
+              <li>Operations Research</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-3); border-bottom: 2px solid var(--color-accent); padding-bottom: var(--space-1);">Secure Computing &amp; Systems</h3>
+            <ul class="list-check">
+              <li>Blockchain Security &amp; Applications</li>
+              <li>Cryptography &amp; Coding Theory</li>
+              <li>Cyber Security &amp; Privacy</li>
+              <li>Software Architecture &amp; Design Patterns</li>
+              <li>High-Performance Computing (HPC)</li>
+              <li>Cloud &amp; Edge Computing</li>
+              <li>Internet of Things (IoT)</li>
+              <li>Next Generation Networks</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md); margin-bottom: var(--space-3); border-bottom: 2px solid var(--color-accent); padding-bottom: var(--space-1);">Analytics &amp; Intelligence</h3>
+            <ul class="list-check">
+              <li>Artificial Intelligence (AI)</li>
+              <li>Machine Learning &amp; Deep Learning</li>
+              <li>Quantum Computing</li>
+              <li>Information Retrieval</li>
+              <li>Data Warehousing &amp; Data Mining</li>
+              <li>Computer Vision &amp; Image Processing</li>
+              <li>Big Data Analytics &amp; Decision Systems</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Publication Opportunities -->
+      <article class="content-card">
+        <div class="content-split">
+          <div class="content-split__text">
+            <h2>Publication Opportunities</h2>
+            <p>
+              Selected and accepted papers presented at ICSCMBA - 2026 will be submitted to Springer for possible publication in Springer Proceedings (CCIS Series) after a standard peer-review process.
+            </p>
+            <p>
+              Publication in Springer Proceedings is subject to the final peer-review decision and formatting guidelines of Springer.
+            </p>
+          </div>
+          <div class="content-split__media">
+            <img src="assets/images/campus/publication.png" alt="Springer CCIS Proceedings Publication Information">
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- info: consistent global footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/style.js"></script>
+
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
-
-
 </html>

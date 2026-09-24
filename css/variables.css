@@ -1,0 +1,97 @@
+/* info: design tokens and css variables */
+
+:root {
+  /* info: color palette */
+  --color-primary: #002244;
+  --color-primary-dark: #00162e;
+  --color-primary-light: #0d3868;
+  --color-primary-subtle: #ebf3fa;
+  
+  --color-accent: #f59e0b;
+  --color-accent-hover: #d97706;
+  --color-accent-light: #fef3c7;
+  --color-accent-subtle: #fffbeb;
+
+  --color-secondary: #ff9900;
+  --color-secondary-hover: #e68a00;
+
+  --color-text-main: #1e293b;
+  --color-text-muted: #475569;
+  --color-text-light: #64748b;
+  --color-text-inverse: #ffffff;
+
+  --color-bg-body: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-alt: #f1f5f9;
+  --color-bg-dark: #001a35;
+
+  --color-border: #e2e8f0;
+  --color-border-subtle: #cbd5e1;
+  --color-border-focus: #3b82f6;
+
+  /* info: status and notice colors */
+  --color-notice-blue-bg: #eff6ff;
+  --color-notice-blue-border: #3b82f6;
+  --color-notice-green-bg: #f0fdf4;
+  --color-notice-green-border: #22c55e;
+  --color-notice-amber-bg: #fffbeb;
+  --color-notice-amber-border: #f59e0b;
+
+  /* info: typography scale */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md: 1.125rem;    /* 18px */
+  --font-size-lg: 1.25rem;     /* 20px */
+  --font-size-xl: 1.5rem;      /* 24px */
+  --font-size-2xl: 1.875rem;   /* 30px */
+  --font-size-3xl: 2.25rem;    /* 36px */
+  --font-size-4xl: 3rem;       /* 48px */
+  --font-size-hero: 3.5rem;    /* 56px */
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* info: spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* info: borders and radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* info: shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.07);
+
+  /* info: layout tokens */
+  --container-max: 1240px;
+  --container-narrow: 900px;
+  --navbar-height: 70px;
+
+  /* info: transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}

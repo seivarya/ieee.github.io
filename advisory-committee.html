@@ -1,363 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/committee.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/advisory.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisory Committee | ICSCMBA 2026</title>
+  <meta name="description" content="National and International Advisory Committee members for ICSCMBA 2026 at MANIT Bhopal.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- info: core modular stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/committee.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/committees.css">
+
+  <!-- info: modular scripts -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/committee.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
+  <!-- info: navigation header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
         </ul>
-    </nav>
-        <!-- Banner Section -->
-        <section class="inner-banner">
-          <div class="banner-overlay">
-              <h1>Advisory Committee</h1>
-          </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- info: inner page banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">Advisory Committee</h1>
+      </div>
+    </section>
+
+    <!-- info: main committee content -->
+    <div class="container section">
+      
+      <!-- info: tab control buttons -->
+      <div class="tab-container" role="tablist" aria-label="Advisory Committee Category">
+        <button class="tab-btn is-active" data-target="national-tab" role="tab" aria-selected="true" aria-controls="national-tab">
+          National Advisory Committee
+        </button>
+        <button class="tab-btn" data-target="international-tab" role="tab" aria-selected="false" aria-controls="international-tab">
+          International Advisory Committee
+        </button>
+      </div>
+
+      <!-- info: national advisory committee tab -->
+      <section class="tab-content is-active" id="national-tab" role="tabpanel">
+        <h2 class="committee-group__title">National Advisory Committee</h2>
+        
+        <div class="committee-grid">
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/SubhamoyMaitra.gif" alt="Prof. Subhamoy Maitra">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Subhamoy Maitra</h3>
+              <p class="committee-card__affiliation">ISI Kolkata, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/Ashok_Kumar_Pandey.jpg" alt="Prof. Ashok Kumar Pandey">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Ashok Kumar Pandey</h3>
+              <p class="committee-card__affiliation">IIT Hyderabad, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/RamuBaadiga.png" alt="Prof. Ramu Baadiga">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Ramu Baadiga</h3>
+              <p class="committee-card__affiliation">IIT Indore, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/BKRNayak.jpg" alt="Prof. B K R Nayak">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. B K R Nayak</h3>
+              <p class="committee-card__affiliation">IIM Mumbai, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/PRS_Sharma.jpg" alt="Prof. P R S Sharma">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. P R S Sharma</h3>
+              <p class="committee-card__affiliation">IIM Vishakapatnam, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/Meenakshi.jpeg" alt="Prof. Meenakishi">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Meenakishi</h3>
+              <p class="committee-card__affiliation">IIT Jammu, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/TaraChand.jpg" alt="Prof. Tarachand">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Tarachand</h3>
+              <p class="committee-card__affiliation">IIT Dhanbad, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/AnupamDewan.jpg" alt="Prof. Anupam Deevan">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Anupam Deevan</h3>
+              <p class="committee-card__affiliation">IIT Delhi, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/MuraliRamanCholamari.jpg" alt="Prof. Murali R Cholemari">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Murali R Cholemari</h3>
+              <p class="committee-card__affiliation">IIT Delhi, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/BalajiSrinivasan.png" alt="Prof. Balaji Srinivasan">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Balaji Srinivasan</h3>
+              <p class="committee-card__affiliation">IIT Madras, India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/SubbaRao.png" alt="Prof. Subba Rao Y.V.">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Subba Rao Y.V.</h3>
+              <p class="committee-card__affiliation">India</p>
+            </div>
+          </article>
+
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/NRukmaRekha.jpg" alt="Prof. N Rukma Rekha">
+            </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. N Rukma Rekha</h3>
+              <p class="committee-card__affiliation">University of Hyderabad, India</p>
+            </div>
+          </article>
+        </div>
       </section>
 
-<!-- <div class="button-container">
-    <button id="nationalBtn" class="toggle-btn">National Committee</button>
-    <button id="internationalBtn" class="toggle-btn active">International Committee</button> 
-</div> -->
-
-
-<!-- <div class="container" id="committee-section">
-    <h2 class="title" id="committee-heading">International Advisory Committee</h2> 
-
-    <div class="member-container" id="national-committee" style="display: none;">
+      <!-- info: international advisory committee tab -->
+      <section class="tab-content" id="international-tab" role="tabpanel">
+        <h2 class="committee-group__title">International Advisory Committee</h2>
         
-        <div class="member">
-            <div class="member-img">
-                <img src="./images/manit/kr_pardasani.png" alt="Advisory - K. R. Pardasani" />
+        <div class="committee-grid">
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/SudhirDixit.jpg" alt="Prof. Sudheer Dixit">
             </div>
-            <p class="member-name">Prof. (Dr.) K. R. Pardasani</p>
-            <p class="member-university">MANIT Bhopal, India</p>
-        </div>
-        <div class="member">
-            <div class="member-img">
-                <img src="./images/other/subhamoy-maitra.jpg" alt="Advisory - K. R. Pardasani" />
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Sudheer Dixit</h3>
+              <p class="committee-card__affiliation">University of Oslo, Norway</p>
             </div>
-            <p class="member-name">Prof. Subhamoy Maitra</p>
-            <p class="member-university">Indian Statistical Institute, Kolkata, India</p>
-        </div>
-       
-    </div>
+          </article>
 
-    <div class="member-container" id="international-committee" style="display: flex;">
-        <div class="member">
-            <div class="member-img">
-                <img src="./images/other/rajkumar-buyya.jpg" alt="Advisory - International Member" />
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/RamaKrisnaReddy.jpg" alt="Prof. Ramakrishna Reddy K">
             </div>
-            <p class="member-name">Prof. Rajkumar Buyya</p>
-            <p class="member-university">University of Melbourne, Australia</p>
-        </div>
-        
-    </div>
-</div> -->
-
-<!-- <div class="container" id="first-img">
-    <h2 class="title">Advisory Committee</h2>
-    <div class="member-container">
-      <div class="member">
-        <div class="member-img">
-            <img src="./images/other/rajkumar-buyya.jpg" alt="Advisory - International Member" />
-        </div>
-        <p class="member-name">Prof. Rajkumar Buyya</p>
-        <p class="member-university">University of Melbourne, Australia</p>
-    </div>
-    <div class="member">
-        <div class="member-img">
-            <img src="./images/other/subhamoy-maitra.jpg" alt="Advisory - K. R. Pardasani" />
-        </div>
-        <p class="member-name">Prof. Subhamoy Maitra</p>
-        <p class="member-university">Indian Statistical Institute, Kolkata, India</p>
-    </div>
-    <div class="member">
-        <div class="member-img">
-          <img
-            src="./images/manit/kr_pardasani.png"
-            alt="Advisory - K. R. Pardasani"
-          />
-        </div>
-        <p class="member-name">Prof. (Dr.) K. R. Pardasani</p>
-        <p class="member-university">MANIT Bhopal, India</p>
-      </div>
-    <div class="member">
-        <div class="member-img">
-            <img src="./images/other/NRukmaRekha.jpg" alt="Advisory - K. R. Pardasani" />
-        </div>
-        <p class="member-name">Prof. N Rukma Rekha</p>
-        <p class="member-university">University of Hyderabad, Hyderabad, India</p>
-    </div>
-    </div>
-  </div> -->
-
-
-
-<div class="button-container">
-    <button id="nationalBtn" class="toggle-btn active">National Committee</button>
-    <button id="internationalBtn" class="toggle-btn">International Committee</button> 
-</div>
-
-<div class="container" id="committee-section">
-    <h2 class="title" id="committee-heading">National Advisory Committee</h2>
-
-    <!-- National Committee -->
-    <div class="member-container" id="national-committee" style="display: flex;">
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/SubhamoyMaitra.gif" alt="Subhamoy Maitra">
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Ramakrishna Reddy K</h3>
+              <p class="committee-card__affiliation">Essex Business School, UK</p>
             </div>
-            <p class="member-name">Prof. Subhamoy Maitra</p>
-            <p class="member-university">ISI Kolkata, India</p>
-        </div>
+          </article>
 
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/Ashok_Kumar_Pandey.jpg">
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/XuanVinhVo.jpg" alt="Prof. Xuan Vinh Vo">
             </div>
-            <p class="member-name">Prof. Ashok Kumar Pandey</p>
-            <p class="member-university">IIT Hyderabad, India</p>
-        </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Xuan Vinh Vo</h3>
+              <p class="committee-card__affiliation">University of Economics, Vietnam</p>
+            </div>
+          </article>
 
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/RamuBaadiga.png">
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/MianWU.jpg" alt="Prof. Mian Wu">
             </div>
-            <p class="member-name">Prof. Ramu Baadiga</p>
-            <p class="member-university">IIT Indore, India</p>
-        </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Mian Wu</h3>
+              <p class="committee-card__affiliation">Victoria University, Wellington, New Zealand</p>
+            </div>
+          </article>
 
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/BKRNayak.jpg">
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/SatishKumar.webp" alt="Prof. Satish Kumar">
             </div>
-            <p class="member-name">Prof. B K R Nayak</p>
-            <p class="member-university">IIM Mumbai, India</p>
-        </div>
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Satish Kumar</h3>
+              <p class="committee-card__affiliation">Sunway Business School, Malaysia</p>
+            </div>
+          </article>
 
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/PRS_Sharma.jpg">
+          <article class="committee-card">
+            <div class="committee-card__image">
+              <img src="assets/images/committee/MuraliKrisnaGhatkesar.webp" alt="Prof. Murali Krishna Ghatkesar">
             </div>
-            <p class="member-name">Prof. P R S Sharma</p>
-            <p class="member-university">IIM Vishakapatnam, India</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/Meenakshi.jpeg">
+            <div class="committee-card__content">
+              <h3 class="committee-card__name">Prof. Murali Krishna Ghatkesar</h3>
+              <p class="committee-card__affiliation">Delft University of Technology, Netherlands</p>
             </div>
-            <p class="member-name">Prof. Meenakishi</p>
-            <p class="member-university">IIT Jammu, India</p>
+          </article>
         </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/TaraChand.jpg">
-            </div>
-            <p class="member-name">Prof. Tarachand</p>
-            <p class="member-university">IIT Dhanbad, India</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/AnupamDewan.jpg">
-            </div>
-            <p class="member-name">Prof. Anupam Deevan</p>
-            <p class="member-university">IIT Delhi, India</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/MuraliRamanCholamari.jpg">
-            </div>
-            <p class="member-name">Prof. Murali R Cholemari</p>
-            <p class="member-university">IIT Delhi, India</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/BalajiSrinivasan.png">
-            </div>
-            <p class="member-name">Prof. Balaji Srinivasan</p>
-            <p class="member-university">IIT Madras, India</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/SubbaRao.png">
-            </div>
-            <p class="member-name">Prof. Subba Rao Y.V.</p>
-            <p class="member-university">India</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/NRukmaRekha.jpg">
-            </div>
-            <p class="member-name">Prof. N Rukma Rekha</p>
-            <p class="member-university">University of Hyderabad, India</p>
-        </div>
+      </section>
 
     </div>
+  </main>
 
-    <!-- International Committee -->
-    <div class="member-container" id="international-committee" style="display: none;">
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/SudhirDixit.jpg">
-            </div>
-            <p class="member-name">Prof. Sudheer Dixit</p>
-            <p class="member-university">University of Oslo, Norway</p>
+  <!-- info: consistent global footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
         </div>
 
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/RamaKrisnaReddy.jpg">
-            </div>
-            <p class="member-name">Prof. Ramakrishna Reddy K</p>
-            <p class="member-university">Essex Business School, UK</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/XuanVinhVo.jpg">
-            </div>
-            <p class="member-name">Prof. Xuan Vinh Vo</p>
-            <p class="member-university">University of Economics, Vietnam</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/MianWU.jpg">
-            </div>
-            <p class="member-name">Prof. Mian Wu</p>
-            <p class="member-university">Victoria University, Wellington, New Zealand</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/SatishKumar.webp">
-            </div>
-            <p class="member-name">Prof. Satish Kumar</p>
-            <p class="member-university">Sunway Business School, Malaysia</p>
-        </div>
-
-        <div class="member">
-            <div class="member-img">
-                <img src="./committeePhotos/MuraliKrisnaGhatkesar.webp">
-            </div>
-            <p class="member-name">Prof. Murali Krishna Ghatkesar</p>
-            <p class="member-university">Delft University of Technology, Netherlands</p>
-        </div>
-
-    </div>
-</div>
-
-
-    <!-- Footer -->
-    <footer class="footer-section">
-        <h4>ICSCMBA 2026</h4>
-
-        <ul class="footer-links">
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
             <li><a href="call-for-paper.html">Call for Papers</a></li>
-            <li><a href="submission.html">Submission</a></li>
-            <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-        </ul>
-
-        <!-- <div class="social-icons">
-            <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-        </div> -->
-
-
-        <div class="footer">
-            <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </footer>
-  <script>
-    document.getElementById('nationalBtn').addEventListener('click', function() {
-        document.getElementById('national-committee').style.display = 'flex';
-        document.getElementById('international-committee').style.display = 'none';
-        document.getElementById('committee-heading').textContent = 'National Advisory Committee'; // Change heading
-        this.classList.add('active');
-        document.getElementById('internationalBtn').classList.remove('active');
-    });
-    
-    document.getElementById('internationalBtn').addEventListener('click', function() {
-        document.getElementById('national-committee').style.display = 'none';
-        document.getElementById('international-committee').style.display = 'flex';
-        document.getElementById('committee-heading').textContent = 'International Advisory Committee'; // Change heading
-        this.classList.add('active');
-        document.getElementById('nationalBtn').classList.remove('active');
-    });
-    </script>
-    
-    
-    
-  <script src="./js/style.js"></script>
-    </body>
-    </html>
+
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

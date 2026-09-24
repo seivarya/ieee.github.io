@@ -1,239 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSCMBA 2026</title>
-    <link rel="icon" href="./images/manit-logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contentpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Department | ICSCMBA 2026</title>
+  <meta name="description" content="Department of Mathematics, Bioinformatics & Computer Applications (MBC) at MANIT Bhopal.">
+  <link rel="icon" href="assets/images/branding/manit-logo.png" type="image/png">
 
+  <!-- info: core modular stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+
+  <!-- info: modular scripts -->
+  <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">ICSCMBA</div>
-        <div class="nav-toggle" id="navToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
+
+  <!-- info: navigation header -->
+  <header class="navbar" id="topNavbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/branding/manit-logo.png" alt="MANIT Bhopal Logo" width="42" height="42">
+        <span>ICSCMBA 2026</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-icon"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main Navigation">
+        <ul class="navbar__nav" style="display: contents;">
+          <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+          
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              About
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="about-conference.html" class="dropdown__link">About Conference</a></li>
+              <li class="dropdown__item"><a href="about-manit.html" class="dropdown__link">About MANIT</a></li>
+              <li class="dropdown__item"><a href="about-department.html" class="dropdown__link">About Department</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="important-date.html" class="navbar__link">Important Dates</a></li>
+          <li class="navbar__item"><a href="call-for-paper.html" class="navbar__link">Call for Papers</a></li>
+          <li class="navbar__item"><a href="author-guidelines.html" class="navbar__link">Author Guidelines</a></li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Committees
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="organizing-committee.html" class="dropdown__link">Organizing Committee</a></li>
+              <li class="dropdown__item"><a href="advisory-committee.html" class="dropdown__link">Advisory Committee</a></li>
+              <li class="dropdown__item"><a href="steering-committee.html" class="dropdown__link">Steering Committee</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false">
+              Venue
+              </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item"><a href="conference-venue.html" class="dropdown__link">Conference Venue</a></li>
+              <li class="dropdown__item"><a href="how-to-reach.html" class="dropdown__link">How to Reach</a></li>
+              <li class="dropdown__item"><a href="nearby-places.html" class="dropdown__link">Nearby Places</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item"><a href="acknowledgement.html" class="navbar__link">Acknowledgement</a></li>
+          <li class="navbar__item"><a href="registration.html" class="navbar__link navbar__link--register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- info: inner page banner -->
+    <section class="inner-banner">
+      <div class="inner-banner__overlay">
+        <h1 class="inner-banner__title">About Department</h1>
+      </div>
+    </section>
+
+    <!-- info: main content section -->
+    <div class="container section">
+      <!-- info: department overview split -->
+      <article class="content-card">
+        <div class="content-split">
+          <div class="content-split__text">
+            <h2>Department of Mathematics, Bioinformatics &amp; Computer Applications</h2>
+            <p>
+              The Department of Mathematics, Bioinformatics &amp; Computer Applications (MBC) at MANIT Bhopal is a dynamic academic centre committed to pushing the boundaries of knowledge in mathematical sciences, computing technologies, and their wide-ranging interdisciplinary applications.
+            </p>
+            <p>
+              The department fosters an environment of rigorous intellectual inquiry, high-impact research, and industry-aligned academic curriculum that equips students to become versatile problem-solvers and innovators.
+            </p>
+          </div>
+          <div class="content-split__media">
+            <img src="assets/images/campus/mbc.png" alt="Department of Mathematics, Bioinformatics & Computer Applications, MANIT Bhopal">
+          </div>
+        </div>
+      </article>
+
+      <!-- Our Focus -->
+      <article class="content-card">
+        <h2>Our Focus</h2>
+        <p>The department emphasizes a strong tradition of excellence in teaching, research, and innovation. We are proud of our distinguished faculty, comprising accomplished academicians and researchers with expertise across core domains:</p>
+        <ul class="list-check">
+          <li><strong>Pure &amp; Applied Mathematics:</strong> Theoretical foundations, numerical analysis, differential equations, and mathematical physics.</li>
+          <li><strong>Bioinformatics:</strong> Computational biology, genomic sequence analysis, structural modeling, and biomedical data analytics.</li>
+          <li><strong>Computer Applications:</strong> Algorithms, cloud architectures, database systems, intelligent software engineering, and network security.</li>
+        </ul>
+      </article>
+
+      <!-- Research and Innovation -->
+      <article class="content-card">
+        <h2>Research and Innovation</h2>
+        <p>The department is actively involved in high-impact research, with dedicated research groups exploring frontier fields such as:</p>
+        <ul class="list-check">
+          <li>Cryptography, Network Security &amp; Information Privacy</li>
+          <li>Blockchain Architectures &amp; Distributed Ledger Technologies</li>
+          <li>Mathematical Modeling, Optimization &amp; Simulation</li>
+          <li>Artificial Intelligence, Machine Learning &amp; Deep Learning</li>
+          <li>Bioinformatics, Computational Biology &amp; Health Informatics</li>
+          <li>Big Data Analytics, Cloud Computing &amp; Internet of Things</li>
+        </ul>
+        <p style="margin-top: var(--space-4);">
+          To support advanced research, students and scholars have access to modern high-performance computational laboratories and specialized scientific software toolkits.
+        </p>
+      </article>
+
+      <!-- Our Commitment -->
+      <article class="content-card">
+        <h2>Our Commitment</h2>
+        <p>
+          We are committed to providing an innovative and industry-relevant curriculum that prepares our graduates to excel in an increasingly complex and technology-driven world. Our collaborative initiatives, national research grants, and global academic partnerships enhance the educational experience and ensure our graduates are exceptionally well-prepared to meet emerging challenges in science, engineering, and society.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <!-- info: consistent global footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div>
+          <h4 class="footer__col-title">ICSCMBA 2026</h4>
+          <p class="footer__desc">
+            1st International Conference on Secure Computing, Computational Mechanics &amp; Business Analytics
+          </p>
+          <p class="footer__venue-info">
+            <strong>Dates:</strong> 11–12 December 2026<br>
+            <strong>Venue:</strong> Maulana Azad National Institute of Technology (MANIT), Bhopal, Madhya Pradesh, India - 462003
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="important-date.html">Important Dates</a></li>
-            <li class="dropdown">
-                <a href="#">Committee <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="organizing-committee.html">Organizing Committee</a></li>
-                    <li><a href="advisory-committee.html">Advisory Committee</a></li>
-                    <!-- <li><a href="steering-committee.html">Steering Committee</a></li> -->
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">For Authors <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="call-for-paper.html">Call for Papers</a></li>
-                    <li><a href="author-guidelines.html">Author Guidelines</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Venue & Travel <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="conference-venue.html">Conference Venue</a></li>
-                    <li><a href="how-to-reach.html">How to Reach?</a></li>
-                    <li><a href="nearby-places.html">Nearby Visiting Places</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">About <i id="navplus" class="fa-solid fa-plus"></i><i id="navdown"
-                        class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-conference.html">About Conference</a></li>
-                    <li><a href="about-manit.html">About MANIT</a></li>
-                    <li><a href="about-department.html">About Department</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="register-btn">Submission</a></li>
-        </ul>
-    </nav>
-
-    <!-- Banner Section -->
-    <section class="inner-banner">
-        <div class="banner-overlay">
-            <h1>About Department</h1>
+            <li><a href="call-for-paper.html">Call for Papers</a></li>
+            <li><a href="author-guidelines.html">Author Guidelines</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
-    </section>
- 
-    <!--gallery-->
-    <!-- <section class="gallery-section">
-        <h2>Campus Highlights</h2>
-        <div class="gallery-slider">
-          <div class="gallery-slide active">
-            <img src="images/manitbg.png" alt="Ujjain">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-maingate.jpg" alt="Bhimbetka">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-hostel.jpg" alt="Sanchi">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-nature.jpg" alt="Bhojpur temple">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-library.jpg" alt="Udayagiri-Caves">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-porche.jpg" alt="Udayagiri-Caves">
-          </div>
-          <div class="gallery-slide">
-            <img src="images/manit-republicday.jpg" alt="Udayagiri-Caves">
-          </div>
-          <button class="gallery-prev">&#10094;</button>
-          <button class="gallery-next">&#10095;</button>
+
+        <div>
+          <h4 class="footer__col-title">Resources &amp; Venue</h4>
+          <ul class="footer__links">
+            <li><a href="conference-venue.html">Conference Venue</a></li>
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+            <li><a href="nearby-places.html">Nearby Places</a></li>
+            <li><a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer">MANIT Bhopal Website</a></li>
+          </ul>
         </div>
-      </section> -->
-    <!--about department-->
-    <div class="section-container">
-        <section class="venue-section">
-            <div class="venue-text">
-                <h2>About Department</h2>
-                <p>
-                    The Department of Mathematics, Bioinformatics & Computer Applications at MANIT is a dynamic and thriving academic centre committed to pushing the boundaries of knowledge in mathematical sciences and their diverse applications.
-                </p>
-            </div>
-            <div class="venue-image">
-                <img src="./images/mbc.png" alt="Venue Image">
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Our Focus</h2>
-                <div class="call-for-paper-list">
-                    <p>The department emphasizes a strong tradition of excellence in teaching, research, and innovation.  We are proud of our distinguished faculty, comprising accomplished academicians and researchers with expertise in a wide range of areas, including:</p>
-                    <ul class="highlight-list">
-                      <li>Pure and Applied Mathematics</li>
-                      <li>Bioinformatics</li>
-                      <li>Computer Science</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title odd">
-            <div class="call-for-paper-container">
-                <h2>Research and Innovation</h2>
-                <div class="call-for-paper-list">
-                    <p>The department is actively involved in cutting-edge research, with dedicated research groups exploring exciting and relevant fields such as:</p>
-                    <ul class="highlight-list">
-                      <li>Cryptography</li>
-                      <li>Blockchains</li>
-                      <li>Mathematical Modeling.</li>
-                      <li>Machine Learning</li>
-                      <li>Bioinformatics</li>
-                      <li>Data Science</li>
-                    </ul>
-                    <p>To support this research, students have access to state-of-the-art computational labs and software tools.</p>
-                </div>
-            </div>
-        </section>
-        <section class="call-for-paper-title even">
-            <div class="call-for-paper-container">
-                <h2>Our Commitment</h2>
-                <div class="call-for-paper-list">
-                    <p>We are committed to providing an innovative and industry-relevant curriculum that prepares our graduates to excel in an increasingly complex world.  Our collaborative initiatives and global partnerships further enhance the educational experience and ensure that our students are exceptionally well-prepared to meet emerging challenges in science, technology, and society.</p>
-                </div>
-            </div>
-        </section>
-    </div> 
-
-    <!-- Footer -->
-    <footer class="footer-section">
-      <h4>ICSCMBA 2026</h4>
-
-      <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="important-date.html">Important Dates</a></li>
-          <li><a href="call-for-paper.html">Call for Papers</a></li>
-          <li><a href="submission.html">Submission</a></li>
-          <li><a href="https://www.manit.ac.in/">MANIT</a></li>
-      </ul>
-
-      <!-- <div class="social-icons">
-          <a href="www.youtube.com/@MANIT-Bhopal"><i class="fab fa-youtube"></i></a>
-          <a href="https://x.com/manitbpl"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/school/manitbhopal/?originalSubdomain=in"><i
-                  class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/manitbhopl/"><i class="fab fa-instagram"></i></a>
-      </div> -->
-
-
-      <div class="footer">
-          <p style="text-align: center;">&copy; ICSCMBA 2026 Conference. All Rights Reserved.</p>
       </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ICSCMBA. All Rights Reserved. Maulana Azad National Institute of Technology (MANIT), Bhopal, India.</p>
+      </div>
+    </div>
   </footer>
-    
-    <script>
 
-   // Navbar Toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
-
-// Handle dropdown toggle on mobile
-const dropdownTriggers = document.querySelectorAll('.dropdown > a');
-
-dropdownTriggers.forEach(trigger => {
-    trigger.addEventListener('click', function (e) {
-        if (window.innerWidth <= 1200) {
-            e.preventDefault(); // Prevent default anchor behavior
-            const parentLi = this.parentElement;
-            parentLi.classList.toggle('open');
-        }
-    });
-});     
-//gallery slider
-let galleryIndex = 0;
-const gallerySlides = document.querySelectorAll('.gallery-slide');
-const galleryPrev = document.querySelector('.gallery-prev');
-const galleryNext = document.querySelector('.gallery-next');
-
-function showGallerySlide(index) {
-  gallerySlides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-}
-
-function nextGallerySlide() {
-  galleryIndex = (galleryIndex + 1) % gallerySlides.length;
-  showGallerySlide(galleryIndex);
-}
-
-function prevGallerySlide() {
-  galleryIndex = (galleryIndex - 1 + gallerySlides.length) % gallerySlides.length;
-  showGallerySlide(galleryIndex);
-}
-
-// Auto-slide every 5 seconds
-setInterval(nextGallerySlide, 5000);
-
-// Manual navigation
-galleryNext.addEventListener('click', nextGallerySlide);
-galleryPrev.addEventListener('click', prevGallerySlide);
-
-// Show first slide
-showGallerySlide(galleryIndex);
-
-    
-    </script>
 </body>
-
-
 </html>
